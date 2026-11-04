@@ -1,17 +1,18 @@
 :root {
   color-scheme: light;
-  --color-ink: #30322d;
-  --color-muted: #77776c;
-  --color-accent: #957947;
-  --color-accent-hover: #765c30;
-  --color-line: #d7d3c8;
-  --color-surface: #f7f5ef;
-  --color-soft: #efede5;
-  --color-tint: #e7e3d8;
-  --font-sans: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-  --font-serif: Georgia, "Times New Roman", "Songti SC", serif;
-  --width-page: 1360px;
-  --gutter: clamp(24px, 5vw, 80px);
-  --space-section: clamp(70px, 9vw, 140px);
-  --radius: 2px;
+  --color-ink: #201b26;
+  --color-muted: #6b6470;
+  --color-accent: #8615b6;
+  --color-accent-hover: #66108b;
+  --color-line: #e7e2e9;
+  --color-surface: #fff;
+  --color-soft: #f7f5f9;
+  --color-tint: #f4e9fb;
+  --font-sans:
+    "Avenir Next", "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+  --width-page: 1320px;
+  --gutter: clamp(20px, 4.5vw, 72px);
+  --space-section: clamp(56px, 6vw, 96px);
+  --radius: 18px;
 }

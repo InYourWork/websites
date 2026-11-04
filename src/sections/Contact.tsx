@@ -1,4 +1,5 @@
 import { site, business } from "../content";
+import { enquiryHref } from "../content/catalog.js";
 import { Arrow } from "../components/Arrow";
 export function Contact() {
   const email: string | null = business.email;
@@ -13,7 +14,7 @@ export function Contact() {
           </div>
           <div className="contact-action">
             {email ? (
-              <a className="button primary" href={`mailto:${email}`}>
+              <a className="button primary" href={enquiryHref(email)}>
                 {site.contact.emailLabel}
                 <Arrow diagonal />
               </a>

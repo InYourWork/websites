@@ -1,5 +1,5 @@
 {
-  "name": "@website-template/brand",
+  "name": "@website-template/product",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "pnpm build && vite preview --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/content.test.mjs tests/locales.test.mjs tests/authoring.test.mjs",
+    "test": "node --test tests/content.test.mjs tests/locales.test.mjs tests/authoring.test.mjs tests/catalog.test.mjs",
     "build": "tsc --noEmit && vite build && vite build --ssr src/render.tsx --outDir .ssg && node scripts/generate.mjs && pnpm test:pages",
     "preview": "vite preview --host 127.0.0.1",
     "test:pages": "node --test tests/pages.test.mjs",

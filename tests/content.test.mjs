@@ -24,8 +24,8 @@ test("all referenced photographs exist locally and have provenance", async () =>
   for (const content of contents)
     for (const item of [
       content.hero,
-      content.story,
-      ...content.collections.items,
+      content.guide,
+      ...content.products.items,
     ]) {
       assert.ok(item.imageAlt?.trim());
       const base = resolve(new URL("public/", root).pathname);
@@ -43,15 +43,22 @@ test("all referenced photographs exist locally and have provenance", async () =>
       );
     }
 });
-test("collection identifiers and navigation targets remain unambiguous", () => {
+test("product identifiers and navigation targets remain unambiguous", () => {
   for (const content of contents) {
     assert.equal(
-      new Set(content.collections.items.map((item) => item.id)).size,
-      content.collections.items.length,
+      new Set(content.products.items.map((item) => item.id)).size,
+      content.products.items.length,
     );
     for (const link of content.nav) assert.ok(link.label && link.href);
-    for (const item of content.collections.items)
-      assert.ok(item.name && item.category && item.highlights.length);
+    const categories = content.products.categories.map((item) => item.id);
+    assert.equal(new Set(categories).size, categories.length);
+    for (const item of content.products.items) {
+      assert.ok(
+        item.name &&
+          categories.includes(item.category) &&
+          item.highlights.length,
+      );
+    }
   }
 });
 test("template declares static output and no unavailable backend capability", async () => {

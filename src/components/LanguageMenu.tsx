@@ -30,6 +30,7 @@ export function LanguageMenu() {
         onClick={() => setOpen(!open)}
       >
         <svg
+          className="language-globe"
           width="17"
           height="17"
           viewBox="0 0 24 24"
@@ -43,9 +44,20 @@ export function LanguageMenu() {
           <path d="M3 12h18" />
         </svg>
         {locales.find((item) => item.code === locale)?.label}
-        <span className="language-chevron" aria-hidden="true">
-          ⌄
-        </span>
+        <svg
+          className="language-chevron"
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m3 4.5 3 3 3-3" />
+        </svg>
       </button>
       {open && (
         <ul

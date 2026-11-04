@@ -1,29 +1,29 @@
 [
   {
-    "file": "public/images/still-life.jpg",
-    "author": "Veronika Martinelli",
-    "source": "https://unsplash.com/photos/ePUuKfAUwtA",
+    "file": "public/images/headphones.jpg",
+    "author": "C D-X",
+    "source": "https://unsplash.com/photos/PDX_a_82obo",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   },
   {
-    "file": "public/images/vessels.jpg",
-    "author": "Tom Crew",
-    "source": "https://unsplash.com/photos/JT3W6P1mYtU",
+    "file": "public/images/pink-headphones.jpg",
+    "author": "Alexunder Hess",
+    "source": "https://unsplash.com/photos/bWZAPKm0zZE",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   },
   {
-    "file": "public/images/bowls.jpg",
-    "author": "Tom Crew",
-    "source": "https://unsplash.com/photos/YA2E3d7a9Wo",
+    "file": "public/images/studio-headphones.jpg",
+    "author": "Ervo Rocks",
+    "source": "https://unsplash.com/photos/Zam8TvEgN5o",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   },
   {
-    "file": "public/images/studio.jpg",
-    "author": "Roberto Sorin",
-    "source": "https://unsplash.com/photos/K9BCfDWFiZI",
+    "file": "public/images/speaker.jpg",
+    "author": "Tim Schmidbauer",
+    "source": "https://unsplash.com/photos/N0J3X_z5dyQ",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   }

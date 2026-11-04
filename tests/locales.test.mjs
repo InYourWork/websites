@@ -28,8 +28,12 @@ test("every enabled language provides a complete matching content structure", as
       baseline.nav.map((item) => item.href),
     );
     assert.deepEqual(
-      content.collections.items.map((item) => item.id),
-      baseline.collections.items.map((item) => item.id),
+      content.products.categories.map((item) => item.id),
+      baseline.products.categories.map((item) => item.id),
+    );
+    assert.deepEqual(
+      content.products.items.map((item) => item.id),
+      baseline.products.items.map((item) => item.id),
     );
     assert.ok(
       content.meta.title && content.meta.description && content.ui.language,
@@ -43,14 +47,9 @@ test("default locale has no prefix and other locales retain page paths", () => {
       const prefix =
         entry.code === variant.defaultLocale ? "" : `${entry.prefix}/`;
       assert.equal(routePath(variant, entry.code), prefix);
-      for (const collection of baseline.collections.items) {
-        const path = routePath(
-          variant,
-          entry.code,
-          "collection",
-          collection.id,
-        );
-        assert.equal(path, `${prefix}collections/${collection.id}/`);
+      for (const product of baseline.products.items) {
+        const path = routePath(variant, entry.code, "product", product.id);
+        assert.equal(path, `${prefix}products/${product.id}/`);
         assert.equal(
           rootPrefix(path),
           "../".repeat(path.split("/").filter(Boolean).length),
@@ -59,6 +58,6 @@ test("default locale has no prefix and other locales retain page paths", () => {
     }
   }
   assert.throws(() =>
-    routePath(config, config.defaultLocale, "collection", "../bad"),
+    routePath(config, config.defaultLocale, "product", "../bad"),
   );
 });

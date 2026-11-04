@@ -1,3 +1,13 @@
+export interface Product {
+  id: string;
+  name: string;
+  category: string;
+  summary: string;
+  image: string;
+  imageAlt: string;
+  detail: string;
+  highlights: string[];
+}
 export interface SiteContent {
   brand: {
     name: string;
@@ -5,62 +15,37 @@ export interface SiteContent {
     descriptor: string;
     copyright: string;
   };
-  nav: Array<{
-    label: string;
-    href: string;
-  }>;
+  nav: Array<{ label: string; href: string }>;
   hero: {
     eyebrow: string;
-    title: Array<string>;
+    title: string[];
     description: string;
     primary: string;
+    secondary: string;
     image: string;
     imageAlt: string;
     caption: string;
-    note: string;
   };
-  manifesto: {
-    eyebrow: string;
-    title: string;
-    description: string;
-  };
-  collections: {
+  products: {
     eyebrow: string;
     title: string;
     pageTitle: string;
     intro: string;
     allLabel: string;
-    items: Array<{
-      id: string;
-      name: string;
-      category: string;
-      summary: string;
-      image: string;
-      imageAlt: string;
-      detail: string;
-      highlights: Array<string>;
-    }>;
+    categories: Array<{ id: string; label: string }>;
+    items: Product[];
   };
-  story: {
+  guide: {
     eyebrow: string;
     title: string;
     description: string;
+    link: string;
     image: string;
     imageAlt: string;
-    link: string;
-    paragraphs: Array<string>;
-    values: Array<{
-      title: string;
-      description: string;
-    }>;
+    paragraphs: string[];
+    steps: Array<{ title: string; description: string }>;
   };
-  faq: {
-    title: string;
-    items: Array<{
-      question: string;
-      answer: string;
-    }>;
-  };
+  faq: { title: string; items: Array<{ question: string; answer: string }> };
   contact: {
     eyebrow: string;
     title: string;
@@ -72,26 +57,27 @@ export interface SiteContent {
   ui: {
     menu: string;
     closeMenu: string;
-    viewCollection: string;
-    collectionLabel: string;
-    highlights: string;
     skip: string;
     backTop: string;
     navigation: string;
     categories: string;
     language: string;
     home: string;
-    allCollections: string;
-    backCollections: string;
-    notFound: string;
-    collectionIntro: string;
+    allProducts: string;
+    backProducts: string;
+    viewProduct: string;
+    search: string;
+    searchPlaceholder: string;
+    results: string;
+    resultOne: string;
+    empty: string;
+    reset: string;
+    related: string;
+    enquire: string;
+    photoNote: string;
   };
-  meta: {
-    title: string;
-    description: string;
-  };
+  meta: { title: string; description: string };
 }
-export type Collection = SiteContent["collections"]["items"][number];
 export interface BusinessConfig {
   email: string | null;
 }

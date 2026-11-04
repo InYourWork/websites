@@ -1,38 +1,39 @@
 {
   "schemaVersion": 1,
-  "id": "brand",
-  "category": "brand",
+  "id": "product",
+  "category": "product",
   "name": {
-    "en-US": "AUREL · Brand presentation",
-    "zh-CN": "AUREL · 品牌展示"
+    "en-US": "SONO · Product showcase",
+    "zh-CN": "SONO · 产品展示"
   },
   "description": {
-    "en-US": "An editorial lifestyle brand with collections, visual stories and a brand story.",
-    "zh-CN": "编辑式生活方式品牌展示，包含系列选集、内容详情与品牌故事。"
+    "en-US": "A colorful audio catalog with product search, detail pages and a buying guide.",
+    "zh-CN": "明亮的音频产品目录，包含产品搜索、详情页和选购指南。"
   },
   "repository": "https://github.com/InYourWork/websites",
-  "branch": "templates/brand",
+  "branch": "templates/product",
   "stack": "react-vite",
   "contentEntry": "src/content/locales/",
   "styleEntry": "src/styles/tokens.css",
   "outputDirectory": "dist",
   "features": [
-    "responsive-navigation",
-    "collection-filter",
-    "brand-story",
-    "faq",
-    "email-contact",
+    "product-search",
+    "category-filter",
+    "product-detail",
+    "related-products",
+    "buying-guide",
+    "email-enquiry",
     "multilingual",
-    "collection-detail"
+    "quote-enquiry"
   ],
   "requiredRuntimeCapabilities": [],
-  "designReference": "https://designmd.ai/chef/marblecrest",
+  "designReference": "https://designmd.ai/chef/shopvibe",
   "localeConfig": "src/content/config.json",
   "pages": {
     "home": "/",
-    "collection": "/collections/",
-    "content": "/collections/{id}/",
-    "story": "/story/"
+    "catalog": "/products/",
+    "product": "/products/{id}/",
+    "guide": "/guide/"
   },
   "rendering": "static-generation"
 }

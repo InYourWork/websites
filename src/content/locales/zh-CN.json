@@ -1,160 +1,164 @@
 {
   "brand": {
-    "name": "AUREL",
-    "english": "器物与日常",
-    "descriptor": "为慢一点的生活，留一些空间。",
-    "copyright": "AUREL · 品牌展示示例"
+    "name": "sono",
+    "english": "声音 · 色彩 · 日常",
+    "descriptor": "找到属于你的日常节奏。",
+    "copyright": "SONO · 商品展示"
   },
   "nav": [
     {
-      "label": "探索系列",
-      "href": "collections"
+      "label": "探索产品",
+      "href": "products"
     },
     {
-      "label": "品牌故事",
-      "href": "story"
-    },
-    {
-      "label": "我们的理念",
-      "href": "#approach"
+      "label": "聆听指南",
+      "href": "guide"
     }
   ],
   "hero": {
-    "eyebrow": "让生活，多一分从容",
-    "title": ["少一点，", "更有意义。"],
-    "description": "简洁的形态，安静的质感。让日常器物，成为认真生活的小小提醒。",
-    "primary": "探索作品系列",
-    "image": "images/still-life.jpg",
-    "imageAlt": "柔和光线下，白色陶器、干花与书本组成的静物",
-    "caption": "为真正重要的事物，留一点空间。",
-    "note": "日常，也是一门艺术"
+    "eyebrow": "你的世界，你的声音。",
+    "title": ["好声音，", "一路相伴。"],
+    "description": "多一点色彩，多一点自我。探索属于日常每个精彩时刻的音频好物。",
+    "primary": "探索你的声音",
+    "secondary": "帮我挑选",
+    "image": "images/headphones.jpg",
+    "imageAlt": "明黄色背景上的黑色耳机",
+    "caption": "日常灵感 / 01"
   },
-  "manifesto": {
-    "eyebrow": "AUREL 的视角",
-    "title": "不必拥有更多，\n只需多一点意义。",
-    "description": "一只熟悉的杯子，一枝散步时拾来的花，午后的光掠过桌面。我们在意那些微小的事物，让一个空间慢慢有了自己的样子。"
-  },
-  "collections": {
-    "eyebrow": "系列选集",
-    "title": "发现日常之美。",
-    "pageTitle": "探索系列",
-    "intro": "从形态、质感与日常仪式出发，探索三个视觉方向。以下为展示系列，使用已记录来源的摄影素材。",
-    "allLabel": "全部系列",
+  "products": {
+    "eyebrow": "遇见你的下一份喜爱",
+    "title": "小小好物，满满能量。",
+    "pageTitle": "找到你的频率。",
+    "intro": "探索精选音频设计参考。按分类浏览，或搜索令你心动的细节。",
+    "allLabel": "全部产品",
+    "categories": [
+      {
+        "id": "headphones",
+        "label": "耳机"
+      },
+      {
+        "id": "speakers",
+        "label": "音箱"
+      }
+    ],
     "items": [
       {
-        "id": "quiet-forms",
-        "name": "静物之形",
-        "category": "雕塑器物",
-        "summary": "柔和的轮廓，让空间呼吸。",
-        "image": "images/vessels.jpg",
-        "imageAlt": "一组具有雕塑感的白色陶器",
-        "detail": "圆润的肩线、收拢的开口、器物之间的留白。「静物之形」探索形态与空间的关系，为光线与思绪留下一处安静的角落。",
-        "highlights": [
-          "柔和而富有雕塑感的轮廓",
-          "克制的象牙白色调",
-          "光与影之间的层次"
-        ]
+        "id": "everyday",
+        "name": "日常 / 01",
+        "category": "headphones",
+        "summary": "让音乐融入日常。",
+        "image": "images/headphones.jpg",
+        "imageAlt": "黄色背景上的黑色头戴式耳机",
+        "detail": "为日常聆听带来熟悉的形态。在选择下一副耳机之前，先了解它的外观、质感与细节。",
+        "highlights": ["圆润耳罩", "黑色外观", "软垫头梁"]
       },
       {
-        "id": "daily-rituals",
-        "name": "日常仪式",
-        "category": "餐桌时光",
-        "summary": "为平常的一刻，多花一点心思。",
-        "image": "images/bowls.jpg",
-        "imageAlt": "浅色背景上摆放的四只白色陶碗",
-        "detail": "餐桌不仅是一块平面，也是一处停留、分享与重新开始的地方。「日常仪式」探索简单器物与生活片刻之间的关系。",
-        "highlights": [
-          "适合围坐与分享的组合",
-          "细微而自然的质感变化",
-          "安静、有序的节奏"
-        ]
+        "id": "soft-tone",
+        "name": "柔调 / 02",
+        "category": "headphones",
+        "summary": "让声音多一点温柔。",
+        "image": "images/pink-headphones.jpg",
+        "imageAlt": "浅色背景上的奶油色与玫瑰金耳机",
+        "detail": "温暖的配色与紧凑的轮廓，为个人音频系列提供柔和的视觉方向。",
+        "highlights": ["奶油色配色", "金属色细节", "紧凑耳罩"]
       },
       {
-        "id": "still-life",
-        "name": "生活静景",
-        "category": "生活空间",
-        "summary": "小小的构图，长久的感受。",
-        "image": "images/still-life.jpg",
-        "imageAlt": "带有干花枝条的陶瓶与叠放的书本",
-        "detail": "一只花器、几根枝条、一本翻开的书。「生活静景」关注熟悉的物件如何成为个人表达，随着季节和生活方式悄然变化。",
-        "highlights": [
-          "自然舒展的构图",
-          "层层相叠的中性质感",
-          "留给个人表达的空间"
-        ]
+        "id": "color-play",
+        "name": "玩色 / 03",
+        "category": "headphones",
+        "summary": "让色彩成为主角。",
+        "image": "images/studio-headphones.jpg",
+        "imageAlt": "粉色与橙色背景上的包耳式耳机",
+        "detail": "富有雕塑感的包耳式设计与活泼背景相遇，为产品摄影和日常搭配提供灵感。",
+        "highlights": ["包耳式轮廓", "织物质感耳垫", "金属色外观"]
+      },
+      {
+        "id": "room-sound",
+        "name": "空间 / 04",
+        "category": "speakers",
+        "summary": "为家中添一份氛围。",
+        "image": "images/speaker.jpg",
+        "imageAlt": "暖光下带有编织网罩的 Marshall 音箱",
+        "detail": "编织网罩与温暖光线为房间带来另一种节奏。这份参考探索音频设备与室内空间的关系。",
+        "highlights": ["编织网罩", "温暖色调", "方正轮廓"]
       }
     ]
   },
-  "story": {
-    "eyebrow": "品牌故事",
-    "title": "换一个安静的视角。",
-    "description": "AUREL 是一个虚构的生活方式品牌，以一个简单的想法为起点：与我们相伴的物件，也能提醒我们慢下来。",
-    "image": "images/studio.jpg",
-    "imageAlt": "陶艺师在拉坯机上塑造陶器",
-    "link": "了解我们的故事",
+  "guide": {
+    "eyebrow": "一点选购灵感",
+    "title": "每一天，都有自己的配乐。",
+    "description": "从你的聆听习惯出发。安静的一角、清晨的通勤，或与朋友相聚的房间，为每个时刻找到合适的设备。",
+    "link": "阅读聆听指南",
+    "image": "images/studio-headphones.jpg",
+    "imageAlt": "柔和粉色光线中的包耳式耳机",
     "paragraphs": [
-      "从留意开始。留意器物的曲线、表面的触感，以及它与房间相处的方式。我们在意的不是填满空间，而是让空间得以呼吸。",
-      "这个展示模板将品牌叙事与系列视觉研究结合。摄影作品属于已记录来源的创作者，并非 AUREL 的真实工坊记录或在售商品。"
+      "先想想你的聆听空间：是独自享受，还是与人分享音乐？你能为设备留出多大空间？",
+      "再比较舒适度、连接方式和卖家提供的实际参数。摄影能展示设计方向，但无法告诉你产品的声音表现。"
     ],
-    "values": [
+    "steps": [
       {
-        "title": "有意义的形态",
-        "description": "清晰的轮廓可以承载一个完整的想法。我们偏爱平衡、熟悉，也留有想象空间的形态。"
+        "title": "个人时刻",
+        "description": "独自聆听时，先关注耳机的佩戴与舒适度，再考虑额外功能。"
       },
       {
-        "title": "感受材料",
-        "description": "质感与光线赋予物件性格，让一个表面值得被再次留意。"
+        "title": "让空间发声",
+        "description": "多人共享音乐时，从房间大小与音箱摆放位置开始考虑。"
       },
       {
-        "title": "为生活留白",
-        "description": "用心布置的空间不必完美，更重要的是容得下日常与个人的记忆。"
+        "title": "核对真实信息",
+        "description": "联系我们沟通兼容性、产品详情与具体需求，获取合适的报价。"
       }
     ]
   },
   "faq": {
-    "title": "你可能想了解",
+    "title": "好问题，清晰回答。",
     "items": [
       {
-        "question": "可以购买这里展示的器物吗？",
-        "answer": "这是品牌展示模板，并非正在营业的商店。摄影作品用于表达视觉方向，实际品牌需另行配置商品供应与购买方式。"
+        "question": "如何获取产品报价？",
+        "answer": "点击产品页的“联系获取报价”，告知感兴趣的产品、数量及具体需求，联系我们了解详情。"
       },
       {
-        "question": "这些照片是 AUREL 工坊的实拍吗？",
-        "answer": "不是。图片是来自 Unsplash 的授权参考摄影，创作者和原始链接均记录在素材清单中。"
+        "question": "产品名称和照片真实吗？",
+        "answer": "目录名称为演示标签；照片为注明来源的参考素材，可能展示第三方产品，SONO 不宣称制造这些产品。"
       },
       {
-        "question": "如何发起咨询？",
-        "answer": "配置真实联系邮箱后，咨询入口会打开邮件应用。模板本身不收集消息，也不存储个人信息。"
+        "question": "可以协助选择产品吗？",
+        "answer": "告诉我们你的聆听空间、使用场景与设计偏好，联系沟通适合的产品并确认具体参数。"
       }
     ]
   },
   "contact": {
-    "eyebrow": "从一次对话开始",
-    "title": "有一些想法，想与我们分享？",
-    "description": "期待认真的对话，也期待新的可能。",
-    "emailLabel": "发起咨询",
-    "placeholder": "咨询入口待配置",
-    "note": "品牌展示示例。摄影素材仅作视觉参考，本站不销售商品。"
+    "eyebrow": "聊聊你的声音",
+    "title": "一起找到合适的产品。",
+    "description": "告诉我们你感兴趣的产品与具体需求，联系了解产品详情并获取专属报价。",
+    "emailLabel": "联系获取报价",
+    "placeholder": "产品咨询与报价",
+    "note": "商品展示 · 参考摄影 · 联系了解产品详情与报价。"
   },
   "ui": {
     "menu": "打开菜单",
     "closeMenu": "关闭菜单",
-    "viewCollection": "探索系列",
-    "collectionLabel": "视觉示例",
-    "highlights": "系列方向",
-    "skip": "跳到主要内容",
+    "skip": "跳转至内容",
     "backTop": "回到顶部",
-    "navigation": "主要导航",
-    "categories": "系列分类",
+    "navigation": "主导航",
+    "categories": "产品分类",
     "language": "选择语言",
     "home": "首页",
-    "allCollections": "查看全部系列",
-    "backCollections": "全部系列",
-    "notFound": "未找到该系列",
-    "collectionIntro": "系列背后的想法"
+    "allProducts": "查看全部产品",
+    "backProducts": "全部产品",
+    "viewProduct": "查看产品",
+    "search": "搜索产品",
+    "searchPlaceholder": "试试“耳机”或“温暖”…",
+    "results": "件产品",
+    "empty": "没有找到匹配的产品。",
+    "reset": "清除筛选",
+    "related": "继续发现。",
+    "enquire": "联系获取报价",
+    "photoNote": "参考摄影，产品名称为演示标签。",
+    "resultOne": "件产品"
   },
   "meta": {
-    "title": "AUREL — 器物与日常",
-    "description": "生活方式品牌展示。从安静的形态、日常的仪式，发现慢一点的生活。"
+    "title": "SONO — 找到你的日常节奏",
+    "description": "探索多彩的音频产品目录、了解产品细节，并从聆听指南中寻找灵感。"
   }
 }

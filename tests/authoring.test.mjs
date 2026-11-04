@@ -69,12 +69,12 @@ test("invalid language config and unsafe output paths fail before writes", () =>
   ])
     assert.throws(() => outputFile("/tmp/site-output", path));
   assert.ok(
-    outputFile("/tmp/site-output", "collections/example/").endsWith(
-      "/site-output/collections/example/index.html",
+    outputFile("/tmp/site-output", "products/example/").endsWith(
+      "/site-output/products/example/index.html",
     ),
   );
 });
-test("single language, collection additions and new pages derive from configuration", () => {
+test("single language, product additions and new pages derive from configuration", () => {
   const single = {
     defaultLocale: config.defaultLocale,
     locales: config.locales.filter(
@@ -84,10 +84,10 @@ test("single language, collection additions and new pages derive from configurat
   validateConfig(single);
   assert.equal(routePath(single, single.defaultLocale), "");
   const modified = structuredClone(content);
-  modified.collections.items.push({
-    ...modified.collections.items[0],
-    id: "new-collection",
-    name: "New collection",
+  modified.products.items.push({
+    ...modified.products.items[0],
+    id: "new-product",
+    name: "New product",
   });
   modified.nav.reverse();
   const definitions = [
@@ -96,15 +96,15 @@ test("single language, collection additions and new pages derive from configurat
       id: "about",
       path: "about/",
       component: "AboutPage",
-      title: "story.title",
+      title: "guide.title",
     },
   ];
   const pages = expandPages(modified, definitions);
-  assert.ok(pages.some((page) => page.id === "new-collection"));
+  assert.ok(pages.some((page) => page.id === "new-product"));
   assert.ok(pages.some((page) => page.page === "about"));
   assert.equal(
-    pages.find((page) => page.page === "collections").title,
-    `${content.collections.pageTitle} | ${content.meta.title}`,
+    pages.find((page) => page.page === "products").title,
+    `${content.products.pageTitle} | ${content.meta.title}`,
   );
   assert.equal(
     routePath(single, single.defaultLocale, "about", "", definitions),

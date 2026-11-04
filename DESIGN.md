@@ -1,25 +1,15 @@
-# AUREL design / AUREL 设计
+# SONO design / SONO 设计
 
-Reference: [MarbleCrest by chef](https://designmd.ai/chef/marblecrest), listed under the user-provided designmd.ai landing-page collection. The reference page labels its license as MIT.
-参考：[chef 的 MarbleCrest](https://designmd.ai/chef/marblecrest)，来自用户提供的 designmd.ai 落地页设计集合，参考页面标注 MIT。
+Reference: [ShopVibe by chef](https://designmd.ai/chef/shopvibe), from the user's supplied references. Its spacious product-led layout and lively accents guide this independent audio catalog. MarketNest's artisan direction and ZaloPay's financial-app patterns are not mixed into this template.
+参考：[chef 的 ShopVibe](https://designmd.ai/chef/shopvibe)，来自用户提供的参考。借鉴其以产品为中心的留白布局与活泼强调色，制作独立音频目录；不混入 MarketNest 的手工艺方向或 ZaloPay 的金融应用模式。
 
-This is an independent brand presentation inspired by its warm neutral surfaces, charcoal text, restrained gold accents, serif headings and generous spacing. AUREL is a fictional demonstration identity; no real brand endorsement is implied.
-本模板为独立品牌展示实现，借鉴暖中性色背景、炭黑文字、克制金色、衬线标题与充足留白。AUREL 是虚构演示标识，不代表任何真实品牌背书。
-
-- Use an editorial hierarchy: a large two-line headline, wide photography, a short manifesto, collection cards and a story teaser. Exact tokens live in src/styles/tokens.css.
-  使用编辑式层级：大尺寸两行标题、宽幅摄影、简短品牌主张、系列卡片与品牌故事入口。准确设计变量以 src/styles/tokens.css 为准。
-
-- Use system serif typography for headings and a neutral sans-serif for body text. Keep letters spacious in labels and avoid heavy body weights. No external font request is required.
-  标题使用系统衬线字体，正文使用中性无衬线字体；标签适当增加字距，正文避免过重字重，不依赖外部字体请求。
-
-- Give images room to breathe. Preserve recognisable subject matter when cropping; stack the layout on mobile. Keep language controls compact and menus within the viewport.
-  为摄影留出空间，裁切时保留可辨识的主体；移动端纵向排列，语言控件保持紧凑，菜单不超出视口。
-
-- Use restrained borders and minimal corner rounding. Avoid gradients, glow, decorative dashboards or ecommerce controls in this brand presentation.
-  使用克制边框与极少圆角，避免渐变、发光、装饰性看板和电商交易控件。
-
-- Photography comes from Unsplash, the supplied asset source. Original authors and links are recorded in ASSET-CREDITS.json. Do not present these images as the fictional brand's actual products or workshop.
-  摄影素材来自指定来源 Unsplash，作者与链接记录于 ASSET-CREDITS.json；不将这些图片描述为虚构品牌的真实商品或工坊。
-
-- Keep all explanatory documentation and comments bilingual, English first. User-facing content follows its selected locale.
-  说明文档与注释保持英中双语、英文在前，页面文案遵循所选语言。
+- Keep a white canvas, dark text, purple actions and colorful product photography. Exact values live in src/styles/tokens.css. The action color is darker than the reference for legible white button text.
+  保持白色背景、深色正文、紫色操作与彩色产品摄影。准确数值见 src/styles/tokens.css，按钮使用比参考更深的紫色，以保证白色文字可读。
+- Use a bold system sans-serif hierarchy. The homepage pairs a two-line headline with a large product image, followed by a four-column catalog and a contrasting guide feature.
+  使用有力度的系统无衬线字体层级。首页以双行标题搭配大幅产品图，下方为四列产品目录与对比色指南区块。
+- Keep product cards lightweight: square images, category, name, short description. Detail pages use a split image/content layout with a clear quote enquiry action.
+  产品卡片保持轻量：方形图片、分类、名称、简述。详情页采用图片与内容分栏，并明确展示联系获取报价入口。
+- On small screens, stack the hero and detail layouts, use two-column cards where readable, and keep filters and search within the viewport. Use the custom language menu instead of a native select.
+  小屏将首屏与详情布局纵向排列，在可读宽度下保持双列卡片，筛选与搜索不超出视口。语言切换使用自定义菜单，不使用原生下拉框。
+- Treat product imagery as reference photography, not proof of technical specifications or brand ownership. Do not add fake scarcity, reviews or conversion metrics.
+  产品图片是参考摄影，不是技术参数或品牌归属的证明。不添加虚构稀缺性、评价或转化数据。

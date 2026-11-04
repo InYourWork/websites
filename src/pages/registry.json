@@ -6,24 +6,24 @@
     "title": "meta.title"
   },
   {
-    "id": "collections",
-    "path": "collections/",
-    "component": "CollectionsPage",
-    "title": "collections.pageTitle"
+    "id": "products",
+    "path": "products/",
+    "component": "ProductsPage",
+    "title": "products.pageTitle"
   },
   {
-    "id": "collection",
-    "path": "collections/{id}/",
-    "component": "CollectionPage",
-    "collection": "collections.items",
+    "id": "product",
+    "path": "products/{id}/",
+    "component": "ProductPage",
+    "collection": "products.items",
     "title": "name",
     "description": "summary"
   },
   {
-    "id": "story",
-    "path": "story/",
-    "component": "StoryPage",
-    "title": "story.title",
-    "description": "story.description"
+    "id": "guide",
+    "path": "guide/",
+    "component": "GuidePage",
+    "title": "guide.title",
+    "description": "guide.description"
   }
 ]

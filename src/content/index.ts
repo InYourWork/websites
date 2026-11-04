@@ -2,6 +2,7 @@ import config from "./config.json";
 import businessData from "./business.json";
 import type { SiteContent, BusinessConfig } from "./types";
 import { routePath, rootPrefix, validateConfig } from "./routes.js";
+import { validateBusiness } from "./catalog.js";
 const modules = import.meta.glob<{ default: SiteContent }>("./locales/*.json", {
   eager: true,
 });
@@ -13,6 +14,7 @@ export const dictionaries: Record<string, SiteContent> = Object.fromEntries(
 );
 export const business: BusinessConfig = businessData;
 validateConfig(config);
+validateBusiness(business);
 for (const entry of config.locales) {
   if (!dictionaries[entry.code])
     throw new Error(`Missing locale: ${entry.code}`);
@@ -40,7 +42,7 @@ if (typeof document !== "undefined") {
     data.contentId ?? "",
   );
 }
-export type { Collection } from "./types";
+export type { Product } from "./types";
 export const asset = (path: string) => `${relativeRoot}${path}`;
 export const localizedPath = (language: string, kind = page, id = contentId) =>
   `${relativeRoot}${routePath(config, language, kind, id)}`;

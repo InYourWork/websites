@@ -1,160 +1,168 @@
 {
   "brand": {
-    "name": "AUREL",
-    "english": "OBJECTS & EVERYDAY RITUALS",
-    "descriptor": "Objects for a slower kind of living.",
-    "copyright": "AUREL · Demonstration brand"
+    "name": "sono",
+    "english": "SOUND. COLOR. EVERYDAY.",
+    "descriptor": "Find your everyday rhythm.",
+    "copyright": "SONO · Product showcase"
   },
   "nav": [
     {
-      "label": "The collections",
-      "href": "collections"
+      "label": "Explore products",
+      "href": "products"
     },
     {
-      "label": "Our story",
-      "href": "story"
-    },
-    {
-      "label": "Our approach",
-      "href": "#approach"
+      "label": "The listening guide",
+      "href": "guide"
     }
   ],
   "hero": {
-    "eyebrow": "A CONSIDERED WAY OF LIVING",
-    "title": ["Less, but", "more meaningful."],
-    "description": "Simple forms. Quiet textures. Objects that bring a little more intention to the everyday.",
-    "primary": "Explore the collections",
-    "image": "images/still-life.jpg",
-    "imageAlt": "White ceramic vessel, dried flowers and books in a softly lit interior",
-    "caption": "A little room for the things that matter.",
-    "note": "THE ART OF EVERYDAY"
+    "eyebrow": "YOUR WORLD. YOUR SOUND.",
+    "title": ["Good sound.", "Great company."],
+    "description": "A little more color. A little more you. Discover audio essentials for the moments that make your day.",
+    "primary": "Find your sound",
+    "secondary": "Help me choose",
+    "image": "images/headphones.jpg",
+    "imageAlt": "Black headphones on a sunny yellow surface",
+    "caption": "THE EVERYDAY EDIT / 01"
   },
-  "manifesto": {
-    "eyebrow": "THE AUREL PERSPECTIVE",
-    "title": "Not more things.\nMore meaning.",
-    "description": "A familiar cup. A branch gathered on a walk. The afternoon light moving across a table. We are drawn to the small things that make a space feel like our own."
-  },
-  "collections": {
-    "eyebrow": "SELECTED COLLECTIONS",
-    "title": "A study in everyday beauty.",
-    "pageTitle": "The collections",
-    "intro": "Explore three visual directions in form, texture and ritual. These are demonstration collections, illustrated with credited photography.",
-    "allLabel": "All collections",
+  "products": {
+    "eyebrow": "MEET YOUR NEXT FAVORITE",
+    "title": "Small things. Big energy.",
+    "pageTitle": "Find your frequency.",
+    "intro": "Explore a curated selection of audio design references. Choose a category or search for something that catches your eye.",
+    "allLabel": "All products",
+    "categories": [
+      {
+        "id": "headphones",
+        "label": "Headphones"
+      },
+      {
+        "id": "speakers",
+        "label": "Speakers"
+      }
+    ],
     "items": [
       {
-        "id": "quiet-forms",
-        "name": "Quiet Forms",
-        "category": "Sculptural objects",
-        "summary": "Gentle silhouettes. Space to breathe.",
-        "image": "images/vessels.jpg",
-        "imageAlt": "A group of sculptural white ceramic vessels",
-        "detail": "An exploration of rounded shoulders, narrow openings and the spaces between objects. Quiet Forms is a visual direction for interiors that leave room for light and reflection.",
+        "id": "everyday",
+        "name": "Everyday / 01",
+        "category": "headphones",
+        "summary": "Your daily soundtrack.",
+        "image": "images/headphones.jpg",
+        "imageAlt": "Headphones on a bright yellow background",
+        "detail": "A familiar silhouette for an everyday listening setup. Explore the shape, finish and details before choosing your next pair.",
+        "highlights": ["Rounded earcups", "Black finish", "Padded headband"]
+      },
+      {
+        "id": "soft-tone",
+        "name": "Soft Tone / 02",
+        "category": "headphones",
+        "summary": "A softer side of sound.",
+        "image": "images/pink-headphones.jpg",
+        "imageAlt": "Cream and rose-gold on-ear headphones on a light surface",
+        "detail": "Warm tones and a compact profile make this visual study a natural starting point for a personal audio collection.",
+        "highlights": ["Cream palette", "Metallic accents", "Compact earcups"]
+      },
+      {
+        "id": "color-play",
+        "name": "Color Play / 03",
+        "category": "headphones",
+        "summary": "Turn the color up.",
+        "image": "images/studio-headphones.jpg",
+        "imageAlt": "Over-ear headphones on a pink and orange background",
+        "detail": "A sculptural over-ear design against a playful backdrop. A reference for expressive product photography and everyday styling.",
         "highlights": [
-          "Soft, sculptural silhouettes",
-          "A restrained ivory palette",
-          "An interplay of light and shadow"
+          "Over-ear silhouette",
+          "Textured cushions",
+          "Metallic finish"
         ]
       },
       {
-        "id": "daily-rituals",
-        "name": "Daily Rituals",
-        "category": "Table moments",
-        "summary": "The ordinary, given a little attention.",
-        "image": "images/bowls.jpg",
-        "imageAlt": "Four white ceramic bowls arranged on a pale surface",
-        "detail": "A table is more than a surface. It is a place to pause, share and begin again. Daily Rituals explores the relationship between simple vessels and the moments we make around them.",
-        "highlights": [
-          "Forms arranged for gathering",
-          "Subtle variations in texture",
-          "A quiet sense of rhythm"
-        ]
-      },
-      {
-        "id": "still-life",
-        "name": "Still Life",
-        "category": "Living spaces",
-        "summary": "Small compositions. Lasting impressions.",
-        "image": "images/still-life.jpg",
-        "imageAlt": "A ceramic vase with dried stems beside stacked books",
-        "detail": "A vessel, a few stems, a book left open. Still Life looks at how familiar objects become personal compositions, changing with the seasons and the way we live.",
-        "highlights": [
-          "Natural compositions",
-          "Layered, neutral textures",
-          "Space for personal expression"
-        ]
+        "id": "room-sound",
+        "name": "Room Sound / 04",
+        "category": "speakers",
+        "summary": "Set the mood at home.",
+        "image": "images/speaker.jpg",
+        "imageAlt": "A Marshall speaker with a woven front in warm light",
+        "detail": "A woven front and warm light bring a different rhythm to a room. This reference explores audio as part of an interior.",
+        "highlights": ["Woven grille", "Warm tones", "Rectangular form"]
       }
     ]
   },
-  "story": {
-    "eyebrow": "OUR STORY",
-    "title": "A quieter point of view.",
-    "description": "AUREL is an imagined lifestyle brand built around one simple idea: the things we live with can invite us to slow down.",
-    "image": "images/studio.jpg",
-    "imageAlt": "A potter shaping a clay vessel on a wheel",
-    "link": "Read our story",
+  "guide": {
+    "eyebrow": "A LITTLE GUIDANCE",
+    "title": "Your day has a soundtrack.",
+    "description": "Start with the way you listen. A quiet corner, a morning commute or a room full of friends — find the setup that fits the moment.",
+    "link": "Explore the listening guide",
+    "image": "images/studio-headphones.jpg",
+    "imageAlt": "Over-ear headphones in soft pink light",
     "paragraphs": [
-      "We begin with attention. To the curve of a vessel, the feel of a surface and the way an object sits in a room. Our point of view is less about filling a space and more about allowing it to breathe.",
-      "This demonstration brings together an editorial brand identity and a collection of visual studies. The photographs belong to their credited creators; they do not document an AUREL workshop or products for sale."
+      "A good starting point is your listening space. Consider whether you want to listen on your own or share music with others, and how much room you have.",
+      "Then compare comfort, connections and the specifications supplied by the seller. Photography can show a design direction, but it cannot tell you how a product sounds."
     ],
-    "values": [
+    "steps": [
       {
-        "title": "Form with purpose",
-        "description": "A clear silhouette can carry an entire idea. We favor forms that feel balanced, familiar and open to interpretation."
+        "title": "Make it personal",
+        "description": "For solo listening, compare headphone fit and comfort before looking at extra features."
       },
       {
-        "title": "Material presence",
-        "description": "Texture and light give objects their character. We look for surfaces that invite a second glance."
+        "title": "Give your room a voice",
+        "description": "For shared listening, start with your room size and where a speaker can sit."
       },
       {
-        "title": "Room for living",
-        "description": "A considered space does not need to be perfect. It should leave room for daily life and personal meaning."
+        "title": "Check the details",
+        "description": "Discuss compatibility, product details and your requirements with us before requesting a quote."
       }
     ]
   },
   "faq": {
-    "title": "A few things to know",
+    "title": "Good questions. Clear answers.",
     "items": [
       {
-        "question": "Can I purchase the pieces shown here?",
-        "answer": "This is a brand presentation template, not an active shop. The photographs illustrate a creative direction. Availability and purchasing need to be configured by the actual brand."
+        "question": "How do I request a quote?",
+        "answer": "Use “Request a quote” on the product page to contact us. Share the product you are interested in, quantities and any specific requirements."
       },
       {
-        "question": "Are these photographs of an AUREL studio?",
-        "answer": "No. The images are licensed reference photographs from Unsplash. Their creators and original sources are listed in the asset credits."
+        "question": "Are the product names and photographs real?",
+        "answer": "The catalog names are demonstration labels. Photos are credited references and may show third-party products; SONO does not claim to manufacture them."
       },
       {
-        "question": "How can I make an enquiry?",
-        "answer": "Once a real contact email is configured, the enquiry link opens your email application. This template does not collect messages or store personal information."
+        "question": "Can you help me choose a product?",
+        "answer": "Tell us about your listening space, intended use and preferred design. Contact us to discuss suitable products and confirm specifications."
       }
     ]
   },
   "contact": {
-    "eyebrow": "BEGIN A CONVERSATION",
-    "title": "Something on your mind?",
-    "description": "For thoughtful conversations and new possibilities.",
-    "emailLabel": "Make an enquiry",
-    "placeholder": "Enquiries coming soon",
-    "note": "A demonstration brand. Photography is illustrative; no products are offered for sale."
+    "eyebrow": "LET’S TALK SOUND",
+    "title": "Let’s find the right fit.",
+    "description": "Tell us which product interests you and what you need. Get in touch for product details and a tailored quote.",
+    "emailLabel": "Request a quote",
+    "placeholder": "Product enquiries & quotations",
+    "note": "Product showcase · Reference photography · Contact us for product details and quotations."
   },
   "ui": {
     "menu": "Open menu",
     "closeMenu": "Close menu",
-    "viewCollection": "Explore collection",
-    "collectionLabel": "Visual study",
-    "highlights": "The direction",
     "skip": "Skip to content",
     "backTop": "Back to top",
     "navigation": "Main navigation",
-    "categories": "Collection categories",
+    "categories": "Product categories",
     "language": "Choose language",
     "home": "Home",
-    "allCollections": "View all collections",
-    "backCollections": "All collections",
-    "notFound": "Collection not found",
-    "collectionIntro": "Behind the collection"
+    "allProducts": "Explore all products",
+    "backProducts": "All products",
+    "viewProduct": "View product",
+    "search": "Search products",
+    "searchPlaceholder": "Try “headphones” or “warm”…",
+    "results": "products",
+    "empty": "No products match your search.",
+    "reset": "Clear filters",
+    "related": "Keep exploring.",
+    "enquire": "Request a quote",
+    "photoNote": "Reference photograph; product names are demonstration labels.",
+    "resultOne": "product"
   },
   "meta": {
-    "title": "AUREL — Objects & everyday rituals",
-    "description": "A considered lifestyle brand presentation. Explore quiet forms, everyday rituals and a slower way of seeing."
+    "title": "SONO — Find your everyday rhythm",
+    "description": "Explore a colorful audio catalog, discover product details and find inspiration in our listening guide."
   }
 }

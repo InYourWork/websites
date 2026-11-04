@@ -1,10 +1,9 @@
-# AUREL Brand Presentation / AUREL 品牌展示
+# SONO Product Showcase / SONO 产品展示
 
-A standalone lifestyle brand website template built with React, TypeScript and Vite. Each branch contains one template; this branch is `templates/brand`.
-使用 React、TypeScript 和 Vite 构建的独立生活方式品牌展示模板；每个分支一个模板，本分支为 `templates/brand`。
+A standalone React, TypeScript and Vite template for a product catalog. This branch is `templates/product`.
+独立的 React、TypeScript 与 Vite 产品目录模板，本分支为 `templates/product`。
 
-## Commands / 命令
-
+## Run / 运行
 
 ```sh
 pnpm install --frozen-lockfile
@@ -15,106 +14,65 @@ pnpm build
 pnpm preview
 ```
 
+Versions and commands live in package.json. `dev` builds and serves the static output; rebuild and refresh after editing. It does not provide hot reload. Deploy only `dist`; do not deploy `.ssg` or source files.
+版本与命令以 package.json 为准。`dev` 构建后提供静态预览，修改后需重新构建并刷新，不提供热更新。仅部署 `dist`，不部署 `.ssg` 或源码。
 
-Runtime and dependency versions are defined in package.json and pnpm-lock.yaml. Deploy only dist; relative links support both domain-root and subpath hosting.
-运行时和依赖版本以 package.json 与 pnpm-lock.yaml 为准；只部署 dist，相对链接支持根目录与子路径托管。
+## Pages and languages / 页面与语言
 
-## Structure / 工程结构
-
-
-```text
-src/
-  content/locales/      Localized content / 多语言内容
-  content/config.json  Language configuration / 语言配置
-  content/index.ts     Content and page context / 内容与页面上下文
-  content/routes.js    URL rules / 地址规则
-  pages/               Page components / 页面组件
-  components/          Shared components / 共用组件
-  sections/            Content sections / 内容区块
-  styles/tokens.css    Design variables / 设计变量
-  styles/global.css    Base styles / 基础样式
-  styles/site.css      Layout and responsiveness / 布局与响应式样式
-  render.tsx           Build-time rendering / 构建时渲染
-  main.tsx             Browser hydration / 浏览器交互接管
-scripts/               Static page generation / 静态页面生成
-public/                Local assets / 本地素材
-tests/                 Content and page checks / 内容与页面检查
-template.json          Template metadata / 模板元数据
-DESIGN.md              Design guidelines / 设计约定
-AGENTS.md              Authoring constraints / 工程编写约束
-ASSET-CREDITS.json     Asset provenance / 素材来源
-```
-
-
-Start with src/content/locales/*.json, then adjust components. Keep localized meta titles/descriptions and public/favicon.svg aligned with the brand.
-先修改 src/content/locales/*.json，再按需调整组件；同步各语言 meta 标题与描述以及 public/favicon.svg。
-
-business.email in src/content/business.json defaults to null. A real email enables the mail link; there is no simulated form, payment or successful submission. Photographs illustrate visual directions, not real AUREL products or workshop records; demo collections are labeled.
-src/content/business.json 中的 business.email 默认为 null，配置真实邮箱后启用邮件链接；没有模拟表单、支付或提交成功。照片用于表达视觉方向，不代表真实 AUREL 商品或工坊记录；演示系列已标记。
-
-Code uses MIT; images have separate licenses recorded in ASSET-CREDITS.json. See DESIGN.md for design references.
-代码采用 MIT；图片许可单独记录在 ASSET-CREDITS.json，设计参考见 DESIGN.md。
-
-## Languages and pages / 语言与页面
-
-
-src/content/config.json defines the default language and other language prefixes. English uses the root by default, and Chinese uses /zh/. No duplicate prefix is generated for the default language. Paths determine language, not query parameters or browser preferences.
-src/content/config.json 定义默认语言和其他语言前缀；默认英文使用根路径，中文使用 /zh/，不为默认语言生成重复前缀。语言由路径确定，不使用查询参数或浏览器偏好。
-
-Rebuild after changing the default language. To add a language, complete its dictionary and add it to config; dictionaries are discovered automatically.
-修改默认语言后重新构建；新增语言需补齐字典并加入 config，字典文件会自动发现。
-
-React generates complete HTML at build time and hydrates menus and filters in the browser. Output is static: no runtime SSR or SPA fallback is needed. Hosting must serve index.html for directory URLs.
-React 在构建时生成完整 HTML，在浏览器中接管菜单和筛选交互。产物纯静态，无需运行时 SSR 或 SPA 回退；托管设施须支持目录 URL 对应 index.html。
+Home, searchable catalog, product detail pages and a listening guide are registered in `src/pages/registry.json`. English is the default language at `/`; Chinese is at `/zh/`. Change the default and enabled languages in `src/content/config.json`, then rebuild.
+首页、可搜索产品目录、产品详情和聆听指南由 `src/pages/registry.json` 注册。默认英文位于 `/`，中文位于 `/zh/`。在 `src/content/config.json` 修改默认语言与启用语言后重新构建。
 
 ```text
-/                         English home / 英文首页
-/collections/                English collection / 英文集合页
-/collections/quiet-forms/          English content / 英文内容页
-/zh/                      Chinese home / 中文首页
-/zh/collections/             Chinese collection / 中文集合页
-/zh/collections/quiet-forms/       Chinese content / 中文内容页
+/                              Home / 首页
+/products/                     Product catalog / 产品目录
+/products/everyday/             Product detail example / 产品详情示例
+/guide/                        Listening guide / 聆听指南
+/zh/                           Chinese home / 中文首页
+/zh/products/                  Chinese catalog / 中文产品目录
+/zh/products/everyday/          Chinese detail example / 中文产品详情示例
+/zh/guide/                     Chinese guide / 中文聆听指南
 ```
 
-
-Language switching retains the page and valid section anchor. Local pnpm dev builds before serving a static preview; it has no hot reload. Rebuild and refresh after editing.
-语言切换保留当前页面与有效区块锚点；本地 pnpm dev 先构建再启动静态预览，不提供热更新，修改后重新构建并刷新。
-
-The build runs page-link and anchor validation automatically. .ssg is intermediate output: do not commit or deploy it.
-构建自动检查页面链接和锚点；.ssg 是中间产物，不提交、不部署。
+All pages contain build-time rendered HTML and localized metadata. React hydrates filtering, search and menus. Language switching retains the current page. No runtime SSR or SPA fallback is required; hosting must serve directory URLs as index.html. Relative assets and links support subpath hosting.
+所有页面包含构建时渲染的完整 HTML 与多语言元信息。React 接管筛选、搜索和菜单交互，切换语言保留当前页面。无需运行时 SSR 或 SPA 回退，托管设施需将目录 URL 映射到 index.html。相对资源与链接支持子路径托管。
 
 ## Editing map / 修改入口
 
-| Task / 任务 | Files / 文件 | Keep in sync / 同步事项 |
-| --- | --- | --- |
-| Copy or branding / 文案与品牌 | src/content/locales/*.json | All enabled languages, meta, favicon / 所有启用语言、元信息、favicon |
-| Contact email / 联系邮箱 | src/content/business.json | Shared across languages / 所有语言共用 |
-| Colors and layout / 配色与布局 | src/styles, src/sections | Desktop and mobile / 桌面与移动端 |
-| Add a collection / 新增系列 | collections.items in locale dictionaries / 字典中的 collections.items | Same stable id in each language; image credits / 各语言使用相同稳定 id，维护素材来源 |
-| Add a language / 新增语言 | content/config.json, content/locales | Match SiteContent in content/types.ts / 遵循 content/types.ts 中的 SiteContent |
-| Add a page / 新增页面 | pages/registry.json, pages/components.ts, new component / 新组件 | Metadata, navigation, translations / 元信息、导航、翻译 |
+| Task / 任务 | Source / 修改位置 |
+| --- | --- |
+| Product names, descriptions, categories / 产品名称、描述、分类 | `src/content/locales/*.json`, `src/content/types.ts` |
+| Default and enabled languages / 默认与启用语言 | `src/content/config.json` |
+| Quote enquiry email / 报价咨询邮箱 | `src/content/business.json` |
+| Page composition / 页面组合 | `src/pages/`, `src/sections/` |
+| Page paths and static generation / 页面路径与静态生成 | `src/pages/registry.json`, `src/pages/components.ts` |
+| Search and business validation / 搜索与业务配置验证 | `src/content/catalog.js` |
+| Appearance / 视觉样式 | `src/styles/`, `DESIGN.md` |
+| Images and attribution / 图片与来源 | `public/images/`, `ASSET-CREDITS.json` |
 
-### Adding a page / 新增页面
+Add products under `products.items` in every enabled dictionary, keeping ids and category ids aligned. Detail pages are generated from those records. Adding a category also requires its translated label under `products.categories`. Keep image paths, alt text and credits in sync.
+在各启用语言字典的 `products.items` 中新增产品，保持产品 id 与分类 id 一致，详情页由这些记录生成。新增分类时同步 `products.categories` 中的翻译标签，保持图片路径、替代文本和素材来源一致。
 
-Create a component under src/pages and export it through pages/components.ts. Add a registry entry with a unique id, a relative directory path ending in /, the component name and a title field path. Add translated content fields to SiteContent and every enabled dictionary when necessary.
-在 src/pages 新建组件并通过 pages/components.ts 注册；在注册表中添加唯一 id、以 / 结尾的相对目录 path、组件名和 title 字段路径。新增翻译字段时同步 SiteContent 与所有启用语言字典。
+Add a page by creating its component, registering it in `pages/components.ts` and adding its path and metadata field paths to `pages/registry.json`. Use `pageUrl(pageId, { id })` to build links. Shared rendering and locale helpers should not need page-specific branches.
+新增页面时创建组件，在 `pages/components.ts` 注册，并在 `pages/registry.json` 配置路径与元信息字段路径。使用 `pageUrl(pageId, { id })` 构建链接，共用渲染与语言工具无需新增页面专属分支。
 
-For example, an about page can use id "about", path "about/", component "AboutPage" and title "story.title". Link to it with pageUrl('about'). App dispatch, language prefixes and static generation read the registry; they do not need separate page branches.
-例如关于页可使用 id "about"、path "about/"、component "AboutPage"、title "story.title"，通过 pageUrl('about') 链接。页面分发、语言前缀与静态生成读取注册表，无需分别添加分支。
+## Business configuration / 业务配置
 
-For a collection detail page, use collection to reference a content array and {id} in path. Each record needs a stable id and the title/description fields declared by the entry. Use pageUrl(pageId, { id }) for links. Update template.json when the advertised template features change.
-集合内容页使用 collection 指向内容数组，并在 path 中使用 {id}；每条记录提供稳定 id 和注册项声明的 title/description 字段。链接使用 pageUrl(pageId, { id })；模板对外声明的能力变化时同步 template.json。
+This is a product showcase with quote enquiries. Product detail pages use “Request a quote”; there are no prices, carts or online purchase links.
+这是面向咨询报价的商品展示模板。产品详情页使用“联系获取报价”，不展示价格，不提供购物车或在线购买链接。
 
-Run pnpm format, pnpm test, pnpm typecheck and pnpm build. The build checks generated pages, links and anchors. Test actual browser interactions separately; successful static checks do not prove hydration or responsive behavior.
-运行 pnpm format、pnpm test、pnpm typecheck 和 pnpm build，构建会检查生成页面、链接和锚点。浏览器交互需单独验收，静态检查成功不代表交互接管或响应式表现通过。
+Configure the shared email in `src/content/business.json`. The quote button opens an email with the current product name as its subject. When email is null, it links to the contact section. Set a real contact email before launch; the template does not collect or submit messages itself.
+在 `src/content/business.json` 配置共用邮箱。报价按钮打开邮件，并以当前产品名称作为主题；邮箱为 null 时跳转至联系区域。正式使用前填写真实联系邮箱，模板本身不收集或提交消息。
 
-Use pnpm test:edits after changing template extension mechanisms. It creates an isolated temporary copy, removes non-default translations, configures an email, changes brand/navigation, adds a collection and registers a page, then runs tests and a full build. It cleans up its temporary copy and does not modify the working template.
-修改模板扩展机制后运行 pnpm test:edits。它在隔离临时副本中移除非默认语言、配置邮箱、修改品牌与导航、新增系列并注册页面，再执行测试与完整构建；结束后清理临时副本，不修改当前模板。
+`BusinessConfig` in `src/content/types.ts` defines the public contact configuration. Never put credentials in frontend configuration.
+公开联系配置合同见 `src/content/types.ts` 中的 `BusinessConfig`，不在前端配置中放置凭据。
 
-## Brand-specific editing / 品牌内容修改
+## Verification and boundaries / 验证与边界
 
-Edit brand identity, hero and manifesto copy, collection narratives, story paragraphs and principles in each enabled dictionary. Shared contact email remains in business.json. The story page lives at /story/ and /zh/story/; collection detail routes come from stable collection ids.
-在各启用语言字典中修改品牌标识、首屏与品牌主张、系列叙事、故事段落和理念；共享联系邮箱仍在 business.json。品牌故事页位于 /story/ 和 /zh/story/，系列详情路径来自稳定的系列 id。
+Run `pnpm format`, `pnpm test`, `pnpm typecheck` and `pnpm build`. The build validates generated page links, anchors and language counterparts. Use `pnpm test:edits` after changing extension mechanisms; it verifies a single-language copy, an added product/page, product-specific email enquiries without modifying this template.
+运行 `pnpm format`、`pnpm test`、`pnpm typecheck` 与 `pnpm build`。构建检查生成页面的链接、锚点与语言对应关系。修改扩展机制后运行 `pnpm test:edits`，它在隔离副本中验证单语言、新产品与页面、产品专属邮件咨询，不修改当前模板。
 
-The template is a presentation site, not an active shop. Do not add prices, checkout, delivery promises or sales claims unless the actual business has supplied and connected those capabilities. Credit the reference photography and replace it with authorized brand assets for a real launch.
-本模板用于品牌展示，并非正在营业的商店。实际业务未提供并接入相关能力前，不添加价格、结算、配送承诺或销售声明；保留参考摄影来源，正式上线时替换为已授权的品牌素材。
+Verify desktop and mobile navigation, search, category filters, empty/reset states, language switching and product links in a browser. Static checks alone do not prove hydration or responsive behavior.
+通过浏览器验收桌面与移动端导航、搜索、分类筛选、空状态与重置、语言切换及产品链接；静态检查不代表交互接管或响应式行为已通过。
+
+SONO and product names are demonstration labels. Unsplash images may depict third-party products and do not establish manufacturer affiliation. Replace them with authorized product assets for a real catalog. Code uses MIT; image licenses and authors are recorded separately in ASSET-CREDITS.json. Authoring rules live in AGENTS.md.
+SONO 与产品名称均为演示标签。Unsplash 图片可能展示第三方产品，不表示制造商关联。真实目录应替换为已授权的产品素材。代码采用 MIT，图片许可与作者单独记录于 ASSET-CREDITS.json，工程编写约束见 AGENTS.md。

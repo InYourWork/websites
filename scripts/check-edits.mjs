@@ -46,25 +46,27 @@ try {
   const content = await readJson(contentPath);
   content.brand.name = "Authoring fixture";
   content.nav.reverse();
-  content.collections.items.push({
-    ...content.collections.items[0],
-    id: "added-collection",
-    name: "Added collection",
+  content.products.items.push({
+    ...content.products.items[0],
+    id: "added-product",
+    name: "Added product",
   });
   await writeJson(contentPath, content);
-  await writeJson("src/content/business.json", { email: "hello@example.com" });
+  await writeJson("src/content/business.json", {
+    email: "hello@example.com",
+  });
   const registry = await readJson("src/pages/registry.json");
   registry.push({
     id: "about",
     path: "about/",
     component: "AboutPage",
-    title: "story.title",
+    title: "guide.title",
   });
   await writeJson("src/pages/registry.json", registry);
   await writeFile(
     join(fixture, "src/pages/AboutPage.tsx"),
     `import { site } from '../content';
-export function AboutPage() { return <section><h1>{site.story.title}</h1><p>{site.story.description}</p></section>; }
+export function AboutPage() { return <section><h1>{site.guide.title}</h1><p>{site.guide.description}</p></section>; }
 `,
   );
   const componentsPath = join(fixture, "src/pages/components.ts");
@@ -83,11 +85,11 @@ export function AboutPage() { return <section><h1>{site.story.title}</h1><p>{sit
   const homepage = await readFile(join(fixture, "dist/index.html"), "utf8");
   assert.ok(homepage.includes("mailto:hello@example.com"));
   const collection = await readFile(
-    join(fixture, "dist/collections/index.html"),
+    join(fixture, "dist/products/index.html"),
     "utf8",
   );
   assert.ok(collection.includes("Authoring fixture"));
-  assert.ok(collection.includes(`<h1>${content.collections.pageTitle}</h1>`));
+  assert.ok(collection.includes(`<h1>${content.products.pageTitle}</h1>`));
   assert.ok(
     (await readFile(join(fixture, "dist/about/index.html"), "utf8")).includes(
       "<h1>",
@@ -96,13 +98,20 @@ export function AboutPage() { return <section><h1>{site.story.title}</h1><p>{sit
   assert.ok(
     (
       await readFile(
-        join(fixture, "dist/collections/added-collection/index.html"),
+        join(fixture, "dist/products/added-product/index.html"),
         "utf8",
       )
-    ).includes("Added collection"),
+    ).includes("Added product"),
+  );
+  const enquiryHtml = await readFile(
+    join(fixture, "dist/products/added-product/index.html"),
+    "utf8",
+  );
+  assert.ok(
+    enquiryHtml.includes("mailto:hello@example.com?subject=Added%20product"),
   );
   console.log(
-    "PASS: single-language build, removed translation, configured email, reordered navigation, replaced brand, added collection and registered page.",
+    "PASS: single-language build, removed translation, configured email, reordered navigation, replaced brand, added product and registered page.",
   );
 } finally {
   await rm(fixture, { recursive: true, force: true });
