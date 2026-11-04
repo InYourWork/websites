@@ -1,0 +1,179 @@
+{
+  "brand": {
+    "name": "Form & Field",
+    "english": "STRATEGY & DESIGN",
+    "descriptor": "Strategy · Design · Digital experiences",
+    "copyright": "Form & Field · Company website demo"
+  },
+  "nav": [
+    {
+      "label": "Our services",
+      "href": "#services"
+    },
+    {
+      "label": "Selected work",
+      "href": "#work"
+    },
+    {
+      "label": "Our process",
+      "href": "#process"
+    },
+    {
+      "label": "About us",
+      "href": "#about"
+    }
+  ],
+  "hero": {
+    "eyebrow": "CLEAR THINKING. MEANINGFUL CHANGE.",
+    "title": ["A clearer direction.", "A meaningful next step."],
+    "description": "We help teams make sense of complex challenges, connecting brand strategy with thoughtful digital experiences.",
+    "primary": "Let’s talk",
+    "secondary": "Explore our services",
+    "image": "images/architecture.jpg",
+    "imageAlt": "Layered white architectural facade in sunlight",
+    "caption": "Structured thinking. Human expression.",
+    "note": "STRATEGY MEETS DESIGN"
+  },
+  "services": {
+    "eyebrow": "01 / WHAT WE DO",
+    "title": "From finding direction\nto making it happen.",
+    "intro": "Strategy, design and implementation, working together. Start with a specific challenge or shape a complete brand experience with us.",
+    "items": [
+      {
+        "id": "strategy",
+        "title": "Brand and business strategy",
+        "description": "Understand your business, audience and ambitions to find a shared starting point for brand and product.",
+        "tags": ["Positioning", "User insight", "Content strategy"]
+      },
+      {
+        "id": "experience",
+        "title": "Design and digital experiences",
+        "description": "Turn a clear strategy into experiences people can see, feel and use.",
+        "tags": ["Visual identity", "Company websites", "Interaction design"]
+      },
+      {
+        "id": "delivery",
+        "title": "Delivery and iteration",
+        "description": "Thoughtful implementation, practical handover and room for the next improvement.",
+        "tags": [
+          "Frontend development",
+          "Experience review",
+          "Ongoing iteration"
+        ]
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "02 / SELECTED DIRECTIONS",
+    "title": "Different ideas.\nDistinct expressions.",
+    "intro": "These demonstration projects illustrate content and visual direction. They are not real clients or completed commissions.",
+    "allLabel": "All",
+    "items": [
+      {
+        "id": "field",
+        "name": "Room to grow",
+        "category": "Brand strategy",
+        "summary": "A clearer narrative for a service business.",
+        "image": "images/facade.jpg",
+        "imageAlt": "Regular window patterns on a modern building",
+        "detail": "This sample explores how positioning, content hierarchy and visual language work together. Replace it with a real project, your role and results you can share.",
+        "deliverables": [
+          "Brand narrative",
+          "Information architecture",
+          "Visual exploration"
+        ]
+      },
+      {
+        "id": "horizon",
+        "name": "A wider perspective",
+        "category": "Digital experience",
+        "summary": "Making complex product capabilities easier to explore.",
+        "image": "images/glass.jpg",
+        "imageAlt": "Geometric glass architecture reflecting a blue sky",
+        "detail": "This sample explores how visitors discover services and start a conversation. Use authorized images and verified information when replacing it.",
+        "deliverables": [
+          "Responsive website",
+          "Core interactions",
+          "Design and development guidelines"
+        ]
+      }
+    ],
+    "pageTitle": "Selected work"
+  },
+  "process": {
+    "eyebrow": "03 / HOW WE WORK",
+    "title": "A shared understanding, at every step.",
+    "items": [
+      {
+        "title": "Understand, then define",
+        "description": "Discuss the context, goals and constraints to agree on the problem worth solving."
+      },
+      {
+        "title": "Explore and design together",
+        "description": "Develop structure and visual direction step by step, making key decisions clear and open to discussion."
+      },
+      {
+        "title": "Deliver with care",
+        "description": "Implement, review and hand over clear guidance, then improve through feedback."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "04 / A SHARED PERSPECTIVE",
+    "title": "Good collaboration\nstarts at the same table.",
+    "description": "Expertise does not need to be complicated. We listen carefully, speak openly and bring different perspectives together to make decisions that fit your business.",
+    "principles": [
+      "Questions before answers",
+      "Clear words, careful work",
+      "Designed for long-term use"
+    ]
+  },
+  "faq": {
+    "title": "Before we get started",
+    "items": [
+      {
+        "question": "Where does a project begin?",
+        "answer": "With a conversation about your business, the challenge and your existing materials. Together we define the scope and next steps."
+      },
+      {
+        "question": "Can we work on one specific area?",
+        "answer": "Yes. We can discuss brand strategy, website design or frontend implementation as a focused engagement. The final scope is agreed together."
+      },
+      {
+        "question": "What should we prepare?",
+        "answer": "A company introduction, brand assets, service information and images you have permission to use. You can also begin by sharing your initial ideas."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "LET’S MAKE IT CLEAR.",
+    "title": "The next good idea\ncould start with a conversation.",
+    "description": "Tell us what you are thinking about.",
+    "emailLabel": "Contact us by email",
+    "placeholder": "Contact details coming soon",
+    "note": "Demonstration website. Replace the sample brand, projects and copy before use."
+  },
+  "ui": {
+    "menu": "Open navigation",
+    "closeMenu": "Close navigation",
+    "viewProject": "View sample project",
+    "projectLabel": "Demo project",
+    "closeProject": "Close project details",
+    "deliverables": "Sample deliverables",
+    "skip": "Skip to main content",
+    "backTop": "Back to top",
+    "navigation": "Main navigation",
+    "categories": "Project categories",
+    "language": "Choose language",
+    "home": "Home",
+    "allProjects": "View all projects",
+    "backProjects": "Back to projects",
+    "notFound": "Project not found",
+    "projectIntro": "About this project",
+    "languageCurrent": "Current language"
+  },
+  "meta": {
+    "title": "Form & Field · Strategy and digital experiences",
+    "description": "Clear strategy, thoughtful design and digital experiences. A demonstration company website."
+  }
+}

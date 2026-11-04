@@ -1,0 +1,32 @@
+{
+  "name": "@inyourwork-template/company",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.2.2",
+  "engines": {
+    "node": ">=22.21.0"
+  },
+  "scripts": {
+    "dev": "pnpm build && vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/content.test.mjs tests/locales.test.mjs tests/authoring.test.mjs",
+    "build": "tsc --noEmit && vite build && vite build --ssr src/render.tsx --outDir .ssg && node scripts/generate.mjs && pnpm test:pages",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:pages": "node --test tests/pages.test.mjs",
+    "format": "prettier --write src scripts tests *.json *.ts *.html",
+    "format:check": "prettier --check src scripts tests *.json *.ts *.html",
+    "test:edits": "node scripts/check-edits.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.0.14"
+  }
+}

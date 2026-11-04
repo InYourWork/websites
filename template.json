@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "company",
+  "category": "company",
+  "name": {
+    "zh-CN": "序川 · 企业官网",
+    "en-US": "Form & Field · Company"
+  },
+  "description": {
+    "zh-CN": "清晰、克制的企业服务官网，包含服务、项目、合作流程与联系入口。",
+    "en-US": "A calm company website with services, projects, process and contact sections."
+  },
+  "repository": "https://github.com/InYourWork/websites",
+  "branch": "templates/company",
+  "stack": "react-vite",
+  "contentEntry": "src/content/locales/",
+  "styleEntry": "src/styles/tokens.css",
+  "outputDirectory": "dist",
+  "features": [
+    "responsive-navigation",
+    "project-filter",
+    "faq",
+    "email-contact",
+    "multilingual",
+    "project-collection",
+    "project-detail"
+  ],
+  "requiredRuntimeCapabilities": [],
+  "designReference": "https://designmd.ai/heerentanna/clutch-clean-trust",
+  "localeConfig": "src/content/config.json",
+  "pages": {
+    "home": "/",
+    "collection": "/projects/",
+    "content": "/projects/{projectId}/"
+  },
+  "rendering": "static-generation"
+}

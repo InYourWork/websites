@@ -1,0 +1,22 @@
+[
+  {
+    "id": "home",
+    "path": "",
+    "component": "HomePage",
+    "title": "meta.title"
+  },
+  {
+    "id": "projects",
+    "path": "projects/",
+    "component": "ProjectsPage",
+    "title": "work.pageTitle"
+  },
+  {
+    "id": "project",
+    "path": "projects/{id}/",
+    "component": "ProjectPage",
+    "collection": "work.items",
+    "title": "name",
+    "description": "summary"
+  }
+]

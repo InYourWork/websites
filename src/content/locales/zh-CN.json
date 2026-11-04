@@ -1,0 +1,163 @@
+{
+  "brand": {
+    "name": "序川",
+    "english": "FORM & FIELD",
+    "descriptor": "策略 · 设计 · 数字体验",
+    "copyright": "序川 · 企业官网演示模板"
+  },
+  "nav": [
+    {
+      "label": "我们能做什么",
+      "href": "#services"
+    },
+    {
+      "label": "项目选集",
+      "href": "#work"
+    },
+    {
+      "label": "合作方式",
+      "href": "#process"
+    },
+    {
+      "label": "关于我们",
+      "href": "#about"
+    }
+  ],
+  "hero": {
+    "eyebrow": "CLEAR THINKING. MEANINGFUL CHANGE.",
+    "title": ["想法的下一步，", "从清晰开始。"],
+    "description": "从品牌策略到数字体验，我们与团队一起梳理复杂问题，让每一个值得投入的想法，有清楚的方向和具体的表达。",
+    "primary": "聊聊你的想法",
+    "secondary": "探索我们的服务",
+    "image": "images/architecture.jpg",
+    "imageAlt": "阳光下层次分明的白色建筑立面",
+    "caption": "有秩序的思考，有温度的表达。",
+    "note": "STRATEGY MEETS DESIGN"
+  },
+  "services": {
+    "eyebrow": "01 / WHAT WE DO",
+    "title": "从找到方向，\n到让想法发生。",
+    "intro": "把策略、设计和实现连在一起。你可以从一个具体问题开始，也可以与我们一起构建完整的品牌体验。",
+    "items": [
+      {
+        "id": "strategy",
+        "title": "品牌与业务策略",
+        "description": "理解你的业务、用户与目标，找到品牌表达和产品体验的共同起点。",
+        "tags": ["品牌定位", "用户洞察", "内容策略"]
+      },
+      {
+        "id": "experience",
+        "title": "设计与数字体验",
+        "description": "让清晰的策略成为可以看见、感受和使用的体验，让每一次沟通更自然。",
+        "tags": ["视觉系统", "企业官网", "交互设计"]
+      },
+      {
+        "id": "delivery",
+        "title": "落地与持续迭代",
+        "description": "从设计细节到上线准备，以可维护的方式交付，为下一次改善留出空间。",
+        "tags": ["前端实现", "体验验证", "迭代支持"]
+      }
+    ]
+  },
+  "work": {
+    "eyebrow": "02 / SELECTED DIRECTIONS",
+    "title": "让不同的想法，\n找到自己的表达。",
+    "intro": "以下为模板示例项目，用来展示内容结构与视觉方向，不代表真实客户或交付案例。",
+    "allLabel": "全部",
+    "items": [
+      {
+        "id": "field",
+        "name": "有序生长",
+        "category": "品牌策略",
+        "summary": "为一家服务型企业梳理品牌叙事，让专业价值被清楚理解。",
+        "image": "images/facade.jpg",
+        "imageAlt": "整齐排列的现代建筑窗格",
+        "detail": "示例项目以信息梳理为起点，展示品牌定位、内容层级与视觉语言如何共同工作。替换时填写真实项目背景、你的角色和可公开的成果。",
+        "deliverables": ["品牌叙事结构", "关键页面信息架构", "视觉方向探索"]
+      },
+      {
+        "id": "horizon",
+        "name": "打开新的视野",
+        "category": "数字体验",
+        "summary": "将复杂的产品能力，转化为简洁、可浏览的数字体验。",
+        "image": "images/glass.jpg",
+        "imageAlt": "映照蓝天的玻璃建筑几何结构",
+        "detail": "示例项目关注用户如何认识服务、探索内容并发起联系。替换时使用已授权的界面图片，避免展示未经确认的业务数据。",
+        "deliverables": ["响应式网站设计", "核心页面交互", "设计与开发规范"]
+      }
+    ],
+    "pageTitle": "项目选集"
+  },
+  "process": {
+    "eyebrow": "03 / HOW WE WORK",
+    "title": "每一步，都有共识。",
+    "items": [
+      {
+        "title": "先理解，再定义",
+        "description": "聊清楚业务背景、目标与限制，共同确认真正需要解决的问题。"
+      },
+      {
+        "title": "一起探索与设计",
+        "description": "从结构到视觉，逐步呈现方案，让关键选择有依据、可讨论。"
+      },
+      {
+        "title": "认真落地与迭代",
+        "description": "完成实现与检查，交付清楚的使用说明，再根据反馈持续改进。"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "04 / A SHARED PERSPECTIVE",
+    "title": "好的合作，\n从同一张桌子开始。",
+    "description": "我们相信，专业不必复杂。坦诚地沟通、认真地倾听，把不同视角放在一起，才能做出适合业务的选择。",
+    "principles": ["问题先于答案", "表达清楚，做事扎实", "为长期使用而设计"]
+  },
+  "faq": {
+    "title": "开始之前，你可能想了解",
+    "items": [
+      {
+        "question": "一个项目通常从哪里开始？",
+        "answer": "从一次需求沟通开始。整理你的业务介绍、想解决的问题和已有素材，我们一起确认项目范围与下一步。"
+      },
+      {
+        "question": "可以只合作一个具体模块吗？",
+        "answer": "可以围绕品牌梳理、网站设计或前端实现等具体模块沟通。实际范围以双方确认的方案为准。"
+      },
+      {
+        "question": "需要提前准备哪些素材？",
+        "answer": "公司介绍、品牌标识、产品或服务资料，以及可以公开使用的图片。还没有准备齐全，也可以先把已有想法写下来。"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "LET’S MAKE IT CLEAR.",
+    "title": "下一个好想法，\n也许就从这次对话开始。",
+    "description": "告诉我们你正在思考的问题。",
+    "emailLabel": "通过邮件联系",
+    "placeholder": "联系方式待配置",
+    "note": "这是企业官网演示模板。示例品牌、项目和文案请在使用前替换。"
+  },
+  "ui": {
+    "menu": "打开导航",
+    "closeMenu": "关闭导航",
+    "viewProject": "查看示例项目",
+    "projectLabel": "示例项目",
+    "closeProject": "关闭项目详情",
+    "deliverables": "示例交付内容",
+    "skip": "跳到主要内容",
+    "backTop": "回到顶部",
+    "navigation": "主要导航",
+    "categories": "项目分类",
+    "language": "选择语言",
+    "home": "首页",
+    "allProjects": "查看全部项目",
+    "backProjects": "返回项目列表",
+    "notFound": "未找到该项目",
+    "projectIntro": "项目介绍",
+    "languageCurrent": "当前语言"
+  },
+  "meta": {
+    "title": "序川 · 策略与数字体验",
+    "description": "序川：以策略、设计与数字体验，梳理企业的下一步。企业官网演示模板。"
+  }
+}

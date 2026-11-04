@@ -1,0 +1,23 @@
+[
+  {
+    "file": "public/images/architecture.jpg",
+    "author": "Joel Filipe",
+    "source": "https://unsplash.com/photos/PFIeJh17SZo",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/facade.jpg",
+    "author": "Joel Filipe",
+    "source": "https://unsplash.com/photos/DHSwX-GNG5g",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/glass.jpg",
+    "author": "Joel Filipe",
+    "source": "https://unsplash.com/photos/Y2lnILwr3nY",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  }
+]
