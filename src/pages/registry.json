@@ -6,17 +6,24 @@
     "title": "meta.title"
   },
   {
-    "id": "projects",
-    "path": "projects/",
-    "component": "ProjectsPage",
-    "title": "work.pageTitle"
+    "id": "collections",
+    "path": "collections/",
+    "component": "CollectionsPage",
+    "title": "collections.pageTitle"
   },
   {
-    "id": "project",
-    "path": "projects/{id}/",
-    "component": "ProjectPage",
-    "collection": "work.items",
+    "id": "collection",
+    "path": "collections/{id}/",
+    "component": "CollectionPage",
+    "collection": "collections.items",
     "title": "name",
     "description": "summary"
+  },
+  {
+    "id": "story",
+    "path": "story/",
+    "component": "StoryPage",
+    "title": "story.title",
+    "description": "story.description"
   }
 ]

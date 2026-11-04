@@ -1,22 +1,29 @@
 [
   {
-    "file": "public/images/architecture.jpg",
-    "author": "Joel Filipe",
-    "source": "https://unsplash.com/photos/PFIeJh17SZo",
+    "file": "public/images/still-life.jpg",
+    "author": "Veronika Martinelli",
+    "source": "https://unsplash.com/photos/ePUuKfAUwtA",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   },
   {
-    "file": "public/images/facade.jpg",
-    "author": "Joel Filipe",
-    "source": "https://unsplash.com/photos/DHSwX-GNG5g",
+    "file": "public/images/vessels.jpg",
+    "author": "Tom Crew",
+    "source": "https://unsplash.com/photos/JT3W6P1mYtU",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   },
   {
-    "file": "public/images/glass.jpg",
-    "author": "Joel Filipe",
-    "source": "https://unsplash.com/photos/Y2lnILwr3nY",
+    "file": "public/images/bowls.jpg",
+    "author": "Tom Crew",
+    "source": "https://unsplash.com/photos/YA2E3d7a9Wo",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license"
+  },
+  {
+    "file": "public/images/studio.jpg",
+    "author": "Roberto Sorin",
+    "source": "https://unsplash.com/photos/K9BCfDWFiZI",
     "license": "Unsplash License",
     "licenseUrl": "https://unsplash.com/license"
   }

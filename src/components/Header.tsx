@@ -25,9 +25,6 @@ export function Header() {
           className="brand"
           aria-label={`${site.brand.name} · ${site.ui.backTop}`}
         >
-          <span className="brand-mark" aria-hidden="true">
-            川
-          </span>
           <span>
             {site.brand.name}
             <small>{site.brand.english}</small>
@@ -54,9 +51,9 @@ export function Header() {
             <a
               key={link.href}
               href={
-                link.href === "#work"
-                  ? pageUrl("projects")
-                  : homeLink(link.href)
+                link.href.startsWith("#")
+                  ? homeLink(link.href)
+                  : pageUrl(link.href)
               }
               onClick={() => setOpen(false)}
             >
@@ -68,7 +65,7 @@ export function Header() {
             className="nav-contact"
             onClick={() => setOpen(false)}
           >
-            {site.hero.primary}
+            {site.contact.emailLabel}
             <Arrow diagonal />
           </a>
         </nav>

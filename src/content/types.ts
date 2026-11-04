@@ -14,26 +14,20 @@ export interface SiteContent {
     title: Array<string>;
     description: string;
     primary: string;
-    secondary: string;
     image: string;
     imageAlt: string;
     caption: string;
     note: string;
   };
-  services: {
+  manifesto: {
     eyebrow: string;
     title: string;
-    intro: string;
-    items: Array<{
-      id: string;
-      title: string;
-      description: string;
-      tags: Array<string>;
-    }>;
+    description: string;
   };
-  work: {
+  collections: {
     eyebrow: string;
     title: string;
+    pageTitle: string;
     intro: string;
     allLabel: string;
     items: Array<{
@@ -44,23 +38,21 @@ export interface SiteContent {
       image: string;
       imageAlt: string;
       detail: string;
-      deliverables: Array<string>;
-    }>;
-    pageTitle: string;
-  };
-  process: {
-    eyebrow: string;
-    title: string;
-    items: Array<{
-      title: string;
-      description: string;
+      highlights: Array<string>;
     }>;
   };
-  about: {
+  story: {
     eyebrow: string;
     title: string;
     description: string;
-    principles: Array<string>;
+    image: string;
+    imageAlt: string;
+    link: string;
+    paragraphs: Array<string>;
+    values: Array<{
+      title: string;
+      description: string;
+    }>;
   };
   faq: {
     title: string;
@@ -80,29 +72,26 @@ export interface SiteContent {
   ui: {
     menu: string;
     closeMenu: string;
-    viewProject: string;
-    projectLabel: string;
-    closeProject: string;
-    deliverables: string;
+    viewCollection: string;
+    collectionLabel: string;
+    highlights: string;
     skip: string;
     backTop: string;
     navigation: string;
     categories: string;
     language: string;
     home: string;
-    allProjects: string;
-    backProjects: string;
+    allCollections: string;
+    backCollections: string;
     notFound: string;
-    projectIntro: string;
-    languageCurrent: string;
+    collectionIntro: string;
   };
   meta: {
     title: string;
     description: string;
   };
 }
-
-export type Project = SiteContent["work"]["items"][number];
+export type Collection = SiteContent["collections"]["items"][number];
 export interface BusinessConfig {
   email: string | null;
 }

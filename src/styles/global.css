@@ -53,14 +53,15 @@ h3 {
   line-height: 1.3;
 }
 h2 {
+  font-family: var(--font-serif);
   font-size: clamp(30px, 3.3vw, 44px);
-  letter-spacing: -0.04em;
-  font-weight: 600;
+  letter-spacing: -0.025em;
+  font-weight: 400;
   white-space: pre-line;
 }
 h3 {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
 }
 ::selection {
   background: var(--color-tint);
@@ -77,9 +78,10 @@ h3 {
   padding-block: var(--space-section);
 }
 .eyebrow {
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  font-weight: 650;
+  color: var(--color-accent);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  font-weight: 400;
   line-height: 1.6;
 }
 .section-heading {
@@ -90,7 +92,6 @@ h3 {
   margin-bottom: 48px;
 }
 .section-heading .eyebrow {
-  color: var(--color-accent);
   margin-bottom: 20px;
 }
 .section-intro {
@@ -117,10 +118,12 @@ h3 {
   background: var(--color-accent);
 }
 .text-link {
+  padding-block: 8px;
+  border-bottom: 1px solid var(--color-ink);
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .text-link:hover {
   color: var(--color-accent);

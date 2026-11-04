@@ -1,18 +1,18 @@
 import { Hero } from "../sections/Hero";
-import { Services } from "../sections/Services";
-import { Projects } from "../sections/Projects";
-import { Process } from "../sections/Process";
-import { About } from "../sections/About";
-import { Faq } from "../sections/Faq";
+import { Collections } from "../sections/Collections";
+import { Story } from "../sections/Story";
+import { site } from "../content";
 export function HomePage() {
   return (
     <>
       <Hero />
-      <Services />
-      <Projects />
-      <Process />
-      <About />
-      <Faq />
+      <section className="manifesto container section" id="approach">
+        <p className="eyebrow">{site.manifesto.eyebrow}</p>
+        <h2>{site.manifesto.title}</h2>
+        <p>{site.manifesto.description}</p>
+      </section>
+      <Collections />
+      <Story />
     </>
   );
 }

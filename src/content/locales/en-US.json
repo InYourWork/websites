@@ -1,179 +1,160 @@
 {
   "brand": {
-    "name": "Form & Field",
-    "english": "STRATEGY & DESIGN",
-    "descriptor": "Strategy · Design · Digital experiences",
-    "copyright": "Form & Field · Company website demo"
+    "name": "AUREL",
+    "english": "OBJECTS & EVERYDAY RITUALS",
+    "descriptor": "Objects for a slower kind of living.",
+    "copyright": "AUREL · Demonstration brand"
   },
   "nav": [
     {
-      "label": "Our services",
-      "href": "#services"
+      "label": "The collections",
+      "href": "collections"
     },
     {
-      "label": "Selected work",
-      "href": "#work"
+      "label": "Our story",
+      "href": "story"
     },
     {
-      "label": "Our process",
-      "href": "#process"
-    },
-    {
-      "label": "About us",
-      "href": "#about"
+      "label": "Our approach",
+      "href": "#approach"
     }
   ],
   "hero": {
-    "eyebrow": "CLEAR THINKING. MEANINGFUL CHANGE.",
-    "title": ["A clearer direction.", "A meaningful next step."],
-    "description": "We help teams make sense of complex challenges, connecting brand strategy with thoughtful digital experiences.",
-    "primary": "Let’s talk",
-    "secondary": "Explore our services",
-    "image": "images/architecture.jpg",
-    "imageAlt": "Layered white architectural facade in sunlight",
-    "caption": "Structured thinking. Human expression.",
-    "note": "STRATEGY MEETS DESIGN"
+    "eyebrow": "A CONSIDERED WAY OF LIVING",
+    "title": ["Less, but", "more meaningful."],
+    "description": "Simple forms. Quiet textures. Objects that bring a little more intention to the everyday.",
+    "primary": "Explore the collections",
+    "image": "images/still-life.jpg",
+    "imageAlt": "White ceramic vessel, dried flowers and books in a softly lit interior",
+    "caption": "A little room for the things that matter.",
+    "note": "THE ART OF EVERYDAY"
   },
-  "services": {
-    "eyebrow": "01 / WHAT WE DO",
-    "title": "From finding direction\nto making it happen.",
-    "intro": "Strategy, design and implementation, working together. Start with a specific challenge or shape a complete brand experience with us.",
+  "manifesto": {
+    "eyebrow": "THE AUREL PERSPECTIVE",
+    "title": "Not more things.\nMore meaning.",
+    "description": "A familiar cup. A branch gathered on a walk. The afternoon light moving across a table. We are drawn to the small things that make a space feel like our own."
+  },
+  "collections": {
+    "eyebrow": "SELECTED COLLECTIONS",
+    "title": "A study in everyday beauty.",
+    "pageTitle": "The collections",
+    "intro": "Explore three visual directions in form, texture and ritual. These are demonstration collections, illustrated with credited photography.",
+    "allLabel": "All collections",
     "items": [
       {
-        "id": "strategy",
-        "title": "Brand and business strategy",
-        "description": "Understand your business, audience and ambitions to find a shared starting point for brand and product.",
-        "tags": ["Positioning", "User insight", "Content strategy"]
+        "id": "quiet-forms",
+        "name": "Quiet Forms",
+        "category": "Sculptural objects",
+        "summary": "Gentle silhouettes. Space to breathe.",
+        "image": "images/vessels.jpg",
+        "imageAlt": "A group of sculptural white ceramic vessels",
+        "detail": "An exploration of rounded shoulders, narrow openings and the spaces between objects. Quiet Forms is a visual direction for interiors that leave room for light and reflection.",
+        "highlights": [
+          "Soft, sculptural silhouettes",
+          "A restrained ivory palette",
+          "An interplay of light and shadow"
+        ]
       },
       {
-        "id": "experience",
-        "title": "Design and digital experiences",
-        "description": "Turn a clear strategy into experiences people can see, feel and use.",
-        "tags": ["Visual identity", "Company websites", "Interaction design"]
+        "id": "daily-rituals",
+        "name": "Daily Rituals",
+        "category": "Table moments",
+        "summary": "The ordinary, given a little attention.",
+        "image": "images/bowls.jpg",
+        "imageAlt": "Four white ceramic bowls arranged on a pale surface",
+        "detail": "A table is more than a surface. It is a place to pause, share and begin again. Daily Rituals explores the relationship between simple vessels and the moments we make around them.",
+        "highlights": [
+          "Forms arranged for gathering",
+          "Subtle variations in texture",
+          "A quiet sense of rhythm"
+        ]
       },
       {
-        "id": "delivery",
-        "title": "Delivery and iteration",
-        "description": "Thoughtful implementation, practical handover and room for the next improvement.",
-        "tags": [
-          "Frontend development",
-          "Experience review",
-          "Ongoing iteration"
+        "id": "still-life",
+        "name": "Still Life",
+        "category": "Living spaces",
+        "summary": "Small compositions. Lasting impressions.",
+        "image": "images/still-life.jpg",
+        "imageAlt": "A ceramic vase with dried stems beside stacked books",
+        "detail": "A vessel, a few stems, a book left open. Still Life looks at how familiar objects become personal compositions, changing with the seasons and the way we live.",
+        "highlights": [
+          "Natural compositions",
+          "Layered, neutral textures",
+          "Space for personal expression"
         ]
       }
     ]
   },
-  "work": {
-    "eyebrow": "02 / SELECTED DIRECTIONS",
-    "title": "Different ideas.\nDistinct expressions.",
-    "intro": "These demonstration projects illustrate content and visual direction. They are not real clients or completed commissions.",
-    "allLabel": "All",
-    "items": [
-      {
-        "id": "field",
-        "name": "Room to grow",
-        "category": "Brand strategy",
-        "summary": "A clearer narrative for a service business.",
-        "image": "images/facade.jpg",
-        "imageAlt": "Regular window patterns on a modern building",
-        "detail": "This sample explores how positioning, content hierarchy and visual language work together. Replace it with a real project, your role and results you can share.",
-        "deliverables": [
-          "Brand narrative",
-          "Information architecture",
-          "Visual exploration"
-        ]
-      },
-      {
-        "id": "horizon",
-        "name": "A wider perspective",
-        "category": "Digital experience",
-        "summary": "Making complex product capabilities easier to explore.",
-        "image": "images/glass.jpg",
-        "imageAlt": "Geometric glass architecture reflecting a blue sky",
-        "detail": "This sample explores how visitors discover services and start a conversation. Use authorized images and verified information when replacing it.",
-        "deliverables": [
-          "Responsive website",
-          "Core interactions",
-          "Design and development guidelines"
-        ]
-      }
+  "story": {
+    "eyebrow": "OUR STORY",
+    "title": "A quieter point of view.",
+    "description": "AUREL is an imagined lifestyle brand built around one simple idea: the things we live with can invite us to slow down.",
+    "image": "images/studio.jpg",
+    "imageAlt": "A potter shaping a clay vessel on a wheel",
+    "link": "Read our story",
+    "paragraphs": [
+      "We begin with attention. To the curve of a vessel, the feel of a surface and the way an object sits in a room. Our point of view is less about filling a space and more about allowing it to breathe.",
+      "This demonstration brings together an editorial brand identity and a collection of visual studies. The photographs belong to their credited creators; they do not document an AUREL workshop or products for sale."
     ],
-    "pageTitle": "Selected work"
-  },
-  "process": {
-    "eyebrow": "03 / HOW WE WORK",
-    "title": "A shared understanding, at every step.",
-    "items": [
+    "values": [
       {
-        "title": "Understand, then define",
-        "description": "Discuss the context, goals and constraints to agree on the problem worth solving."
+        "title": "Form with purpose",
+        "description": "A clear silhouette can carry an entire idea. We favor forms that feel balanced, familiar and open to interpretation."
       },
       {
-        "title": "Explore and design together",
-        "description": "Develop structure and visual direction step by step, making key decisions clear and open to discussion."
+        "title": "Material presence",
+        "description": "Texture and light give objects their character. We look for surfaces that invite a second glance."
       },
       {
-        "title": "Deliver with care",
-        "description": "Implement, review and hand over clear guidance, then improve through feedback."
+        "title": "Room for living",
+        "description": "A considered space does not need to be perfect. It should leave room for daily life and personal meaning."
       }
-    ]
-  },
-  "about": {
-    "eyebrow": "04 / A SHARED PERSPECTIVE",
-    "title": "Good collaboration\nstarts at the same table.",
-    "description": "Expertise does not need to be complicated. We listen carefully, speak openly and bring different perspectives together to make decisions that fit your business.",
-    "principles": [
-      "Questions before answers",
-      "Clear words, careful work",
-      "Designed for long-term use"
     ]
   },
   "faq": {
-    "title": "Before we get started",
+    "title": "A few things to know",
     "items": [
       {
-        "question": "Where does a project begin?",
-        "answer": "With a conversation about your business, the challenge and your existing materials. Together we define the scope and next steps."
+        "question": "Can I purchase the pieces shown here?",
+        "answer": "This is a brand presentation template, not an active shop. The photographs illustrate a creative direction. Availability and purchasing need to be configured by the actual brand."
       },
       {
-        "question": "Can we work on one specific area?",
-        "answer": "Yes. We can discuss brand strategy, website design or frontend implementation as a focused engagement. The final scope is agreed together."
+        "question": "Are these photographs of an AUREL studio?",
+        "answer": "No. The images are licensed reference photographs from Unsplash. Their creators and original sources are listed in the asset credits."
       },
       {
-        "question": "What should we prepare?",
-        "answer": "A company introduction, brand assets, service information and images you have permission to use. You can also begin by sharing your initial ideas."
+        "question": "How can I make an enquiry?",
+        "answer": "Once a real contact email is configured, the enquiry link opens your email application. This template does not collect messages or store personal information."
       }
     ]
   },
   "contact": {
-    "eyebrow": "LET’S MAKE IT CLEAR.",
-    "title": "The next good idea\ncould start with a conversation.",
-    "description": "Tell us what you are thinking about.",
-    "emailLabel": "Contact us by email",
-    "placeholder": "Contact details coming soon",
-    "note": "Demonstration website. Replace the sample brand, projects and copy before use."
+    "eyebrow": "BEGIN A CONVERSATION",
+    "title": "Something on your mind?",
+    "description": "For thoughtful conversations and new possibilities.",
+    "emailLabel": "Make an enquiry",
+    "placeholder": "Enquiries coming soon",
+    "note": "A demonstration brand. Photography is illustrative; no products are offered for sale."
   },
   "ui": {
-    "menu": "Open navigation",
-    "closeMenu": "Close navigation",
-    "viewProject": "View sample project",
-    "projectLabel": "Demo project",
-    "closeProject": "Close project details",
-    "deliverables": "Sample deliverables",
-    "skip": "Skip to main content",
+    "menu": "Open menu",
+    "closeMenu": "Close menu",
+    "viewCollection": "Explore collection",
+    "collectionLabel": "Visual study",
+    "highlights": "The direction",
+    "skip": "Skip to content",
     "backTop": "Back to top",
     "navigation": "Main navigation",
-    "categories": "Project categories",
+    "categories": "Collection categories",
     "language": "Choose language",
     "home": "Home",
-    "allProjects": "View all projects",
-    "backProjects": "Back to projects",
-    "notFound": "Project not found",
-    "projectIntro": "About this project",
-    "languageCurrent": "Current language"
+    "allCollections": "View all collections",
+    "backCollections": "All collections",
+    "notFound": "Collection not found",
+    "collectionIntro": "Behind the collection"
   },
   "meta": {
-    "title": "Form & Field · Strategy and digital experiences",
-    "description": "Clear strategy, thoughtful design and digital experiences. A demonstration company website."
+    "title": "AUREL — Objects & everyday rituals",
+    "description": "A considered lifestyle brand presentation. Explore quiet forms, everyday rituals and a slower way of seeing."
   }
 }

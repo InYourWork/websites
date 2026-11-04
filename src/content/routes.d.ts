@@ -7,7 +7,7 @@ export function routePath(
   config: Config,
   locale: string,
   page?: string,
-  project?: string,
+  contentId?: string,
   definitions?: { id: string; path: string }[],
 ): string;
 export function rootPrefix(path: string): string;

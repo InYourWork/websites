@@ -28,8 +28,8 @@ test("every enabled language provides a complete matching content structure", as
       baseline.nav.map((item) => item.href),
     );
     assert.deepEqual(
-      content.work.items.map((item) => item.id),
-      baseline.work.items.map((item) => item.id),
+      content.collections.items.map((item) => item.id),
+      baseline.collections.items.map((item) => item.id),
     );
     assert.ok(
       content.meta.title && content.meta.description && content.ui.language,
@@ -43,9 +43,14 @@ test("default locale has no prefix and other locales retain page paths", () => {
       const prefix =
         entry.code === variant.defaultLocale ? "" : `${entry.prefix}/`;
       assert.equal(routePath(variant, entry.code), prefix);
-      for (const project of baseline.work.items) {
-        const path = routePath(variant, entry.code, "project", project.id);
-        assert.equal(path, `${prefix}projects/${project.id}/`);
+      for (const collection of baseline.collections.items) {
+        const path = routePath(
+          variant,
+          entry.code,
+          "collection",
+          collection.id,
+        );
+        assert.equal(path, `${prefix}collections/${collection.id}/`);
         assert.equal(
           rootPrefix(path),
           "../".repeat(path.split("/").filter(Boolean).length),
@@ -54,6 +59,6 @@ test("default locale has no prefix and other locales retain page paths", () => {
     }
   }
   assert.throws(() =>
-    routePath(config, config.defaultLocale, "project", "../bad"),
+    routePath(config, config.defaultLocale, "collection", "../bad"),
   );
 });

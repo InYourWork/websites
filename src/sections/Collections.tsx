@@ -4,16 +4,16 @@ import { SectionHeading } from "../components/SectionHeading";
 import { pageUrl } from "../content/links";
 import { Arrow } from "../components/Arrow";
 
-export function Projects({ collection = false }: { collection?: boolean }) {
-  const [filter, setFilter] = useState(site.work.allLabel);
+export function Collections({ collection = false }: { collection?: boolean }) {
+  const [filter, setFilter] = useState(site.collections.allLabel);
   const filters = [
-    site.work.allLabel,
-    ...new Set(site.work.items.map((item) => item.category)),
+    site.collections.allLabel,
+    ...new Set(site.collections.items.map((item) => item.category)),
   ];
   return (
-    <section id="work" className="work-section section">
+    <section id="collections" className="collections-section section">
       <div className="container">
-        <SectionHeading {...site.work} />
+        <SectionHeading {...site.collections} />
         {collection && (
           <div className="filters" role="group" aria-label={site.ui.categories}>
             {filters.map((value) => (
@@ -28,20 +28,21 @@ export function Projects({ collection = false }: { collection?: boolean }) {
             ))}
           </div>
         )}
-        <div className="project-grid">
-          {site.work.items
+        <div className="collection-grid">
+          {site.collections.items
             .filter(
               (item) =>
-                filter === site.work.allLabel || item.category === filter,
+                filter === site.collections.allLabel ||
+                item.category === filter,
             )
             .map((item) => (
-              <article className="project" key={item.id}>
+              <article className="collection" key={item.id}>
                 <a
-                  className="project-open"
-                  href={pageUrl("project", { id: item.id })}
-                  aria-label={`${site.ui.viewProject}：${item.name}`}
+                  className="collection-open"
+                  href={pageUrl("collection", { id: item.id })}
+                  aria-label={`${site.ui.viewCollection}：${item.name}`}
                 >
-                  <div className="project-image">
+                  <div className="collection-image">
                     <img
                       src={asset(item.image)}
                       alt={item.imageAlt}
@@ -49,14 +50,14 @@ export function Projects({ collection = false }: { collection?: boolean }) {
                       height="540"
                       loading="lazy"
                     />
-                    <span className="project-label">
-                      {site.ui.projectLabel}
+                    <span className="collection-label">
+                      {site.ui.collectionLabel}
                     </span>
-                    <span className="project-arrow">
+                    <span className="collection-arrow">
                       <Arrow diagonal />
                     </span>
                   </div>
-                  <div className="project-heading">
+                  <div className="collection-heading">
                     <h3>{item.name}</h3>
                     <span>{item.category}</span>
                   </div>
@@ -66,8 +67,11 @@ export function Projects({ collection = false }: { collection?: boolean }) {
             ))}
         </div>
         {!collection && (
-          <a className="text-link collection-link" href={pageUrl("projects")}>
-            {site.ui.allProjects}
+          <a
+            className="text-link collection-link"
+            href={pageUrl("collections")}
+          >
+            {site.ui.allCollections}
             <Arrow />
           </a>
         )}

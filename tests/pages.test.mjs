@@ -85,20 +85,20 @@ test("configured language variants have matching pages and anchor targets", () =
   const keys = new Set();
   for (const [path, { html, ids }] of pages) {
     const kind = html.match(/data-page="([^"]+)"/)?.[1];
-    const project = html.match(/data-project="([^"]*)"/)?.[1] ?? "";
+    const contentId = html.match(/data-content-id="([^"]*)"/)?.[1] ?? "";
     const language = html.match(/<html[^>]*lang="([^"]+)"/)?.[1];
     assert.ok(config.locales.some((entry) => entry.code === language));
     assert.ok(kind);
     assert.equal(
       path,
-      resolve(root, routePath(config, language, kind, project), "index.html"),
+      resolve(root, routePath(config, language, kind, contentId), "index.html"),
     );
-    const key = `${kind}:${project}`;
+    const key = `${kind}:${contentId}`;
     keys.add(key);
     for (const entry of config.locales) {
       const counterpart = resolve(
         root,
-        routePath(config, entry.code, kind, project),
+        routePath(config, entry.code, kind, contentId),
         "index.html",
       );
       assert.deepEqual(pages.get(counterpart)?.ids, ids, counterpart);

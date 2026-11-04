@@ -1,163 +1,160 @@
 {
   "brand": {
-    "name": "序川",
-    "english": "FORM & FIELD",
-    "descriptor": "策略 · 设计 · 数字体验",
-    "copyright": "序川 · 企业官网演示模板"
+    "name": "AUREL",
+    "english": "器物与日常",
+    "descriptor": "为慢一点的生活，留一些空间。",
+    "copyright": "AUREL · 品牌展示示例"
   },
   "nav": [
     {
-      "label": "我们能做什么",
-      "href": "#services"
+      "label": "探索系列",
+      "href": "collections"
     },
     {
-      "label": "项目选集",
-      "href": "#work"
+      "label": "品牌故事",
+      "href": "story"
     },
     {
-      "label": "合作方式",
-      "href": "#process"
-    },
-    {
-      "label": "关于我们",
-      "href": "#about"
+      "label": "我们的理念",
+      "href": "#approach"
     }
   ],
   "hero": {
-    "eyebrow": "CLEAR THINKING. MEANINGFUL CHANGE.",
-    "title": ["想法的下一步，", "从清晰开始。"],
-    "description": "从品牌策略到数字体验，我们与团队一起梳理复杂问题，让每一个值得投入的想法，有清楚的方向和具体的表达。",
-    "primary": "聊聊你的想法",
-    "secondary": "探索我们的服务",
-    "image": "images/architecture.jpg",
-    "imageAlt": "阳光下层次分明的白色建筑立面",
-    "caption": "有秩序的思考，有温度的表达。",
-    "note": "STRATEGY MEETS DESIGN"
+    "eyebrow": "让生活，多一分从容",
+    "title": ["少一点，", "更有意义。"],
+    "description": "简洁的形态，安静的质感。让日常器物，成为认真生活的小小提醒。",
+    "primary": "探索作品系列",
+    "image": "images/still-life.jpg",
+    "imageAlt": "柔和光线下，白色陶器、干花与书本组成的静物",
+    "caption": "为真正重要的事物，留一点空间。",
+    "note": "日常，也是一门艺术"
   },
-  "services": {
-    "eyebrow": "01 / WHAT WE DO",
-    "title": "从找到方向，\n到让想法发生。",
-    "intro": "把策略、设计和实现连在一起。你可以从一个具体问题开始，也可以与我们一起构建完整的品牌体验。",
+  "manifesto": {
+    "eyebrow": "AUREL 的视角",
+    "title": "不必拥有更多，\n只需多一点意义。",
+    "description": "一只熟悉的杯子，一枝散步时拾来的花，午后的光掠过桌面。我们在意那些微小的事物，让一个空间慢慢有了自己的样子。"
+  },
+  "collections": {
+    "eyebrow": "系列选集",
+    "title": "发现日常之美。",
+    "pageTitle": "探索系列",
+    "intro": "从形态、质感与日常仪式出发，探索三个视觉方向。以下为展示系列，使用已记录来源的摄影素材。",
+    "allLabel": "全部系列",
     "items": [
       {
-        "id": "strategy",
-        "title": "品牌与业务策略",
-        "description": "理解你的业务、用户与目标，找到品牌表达和产品体验的共同起点。",
-        "tags": ["品牌定位", "用户洞察", "内容策略"]
+        "id": "quiet-forms",
+        "name": "静物之形",
+        "category": "雕塑器物",
+        "summary": "柔和的轮廓，让空间呼吸。",
+        "image": "images/vessels.jpg",
+        "imageAlt": "一组具有雕塑感的白色陶器",
+        "detail": "圆润的肩线、收拢的开口、器物之间的留白。「静物之形」探索形态与空间的关系，为光线与思绪留下一处安静的角落。",
+        "highlights": [
+          "柔和而富有雕塑感的轮廓",
+          "克制的象牙白色调",
+          "光与影之间的层次"
+        ]
       },
       {
-        "id": "experience",
-        "title": "设计与数字体验",
-        "description": "让清晰的策略成为可以看见、感受和使用的体验，让每一次沟通更自然。",
-        "tags": ["视觉系统", "企业官网", "交互设计"]
+        "id": "daily-rituals",
+        "name": "日常仪式",
+        "category": "餐桌时光",
+        "summary": "为平常的一刻，多花一点心思。",
+        "image": "images/bowls.jpg",
+        "imageAlt": "浅色背景上摆放的四只白色陶碗",
+        "detail": "餐桌不仅是一块平面，也是一处停留、分享与重新开始的地方。「日常仪式」探索简单器物与生活片刻之间的关系。",
+        "highlights": [
+          "适合围坐与分享的组合",
+          "细微而自然的质感变化",
+          "安静、有序的节奏"
+        ]
       },
       {
-        "id": "delivery",
-        "title": "落地与持续迭代",
-        "description": "从设计细节到上线准备，以可维护的方式交付，为下一次改善留出空间。",
-        "tags": ["前端实现", "体验验证", "迭代支持"]
+        "id": "still-life",
+        "name": "生活静景",
+        "category": "生活空间",
+        "summary": "小小的构图，长久的感受。",
+        "image": "images/still-life.jpg",
+        "imageAlt": "带有干花枝条的陶瓶与叠放的书本",
+        "detail": "一只花器、几根枝条、一本翻开的书。「生活静景」关注熟悉的物件如何成为个人表达，随着季节和生活方式悄然变化。",
+        "highlights": [
+          "自然舒展的构图",
+          "层层相叠的中性质感",
+          "留给个人表达的空间"
+        ]
       }
     ]
   },
-  "work": {
-    "eyebrow": "02 / SELECTED DIRECTIONS",
-    "title": "让不同的想法，\n找到自己的表达。",
-    "intro": "以下为模板示例项目，用来展示内容结构与视觉方向，不代表真实客户或交付案例。",
-    "allLabel": "全部",
-    "items": [
-      {
-        "id": "field",
-        "name": "有序生长",
-        "category": "品牌策略",
-        "summary": "为一家服务型企业梳理品牌叙事，让专业价值被清楚理解。",
-        "image": "images/facade.jpg",
-        "imageAlt": "整齐排列的现代建筑窗格",
-        "detail": "示例项目以信息梳理为起点，展示品牌定位、内容层级与视觉语言如何共同工作。替换时填写真实项目背景、你的角色和可公开的成果。",
-        "deliverables": ["品牌叙事结构", "关键页面信息架构", "视觉方向探索"]
-      },
-      {
-        "id": "horizon",
-        "name": "打开新的视野",
-        "category": "数字体验",
-        "summary": "将复杂的产品能力，转化为简洁、可浏览的数字体验。",
-        "image": "images/glass.jpg",
-        "imageAlt": "映照蓝天的玻璃建筑几何结构",
-        "detail": "示例项目关注用户如何认识服务、探索内容并发起联系。替换时使用已授权的界面图片，避免展示未经确认的业务数据。",
-        "deliverables": ["响应式网站设计", "核心页面交互", "设计与开发规范"]
-      }
+  "story": {
+    "eyebrow": "品牌故事",
+    "title": "换一个安静的视角。",
+    "description": "AUREL 是一个虚构的生活方式品牌，以一个简单的想法为起点：与我们相伴的物件，也能提醒我们慢下来。",
+    "image": "images/studio.jpg",
+    "imageAlt": "陶艺师在拉坯机上塑造陶器",
+    "link": "了解我们的故事",
+    "paragraphs": [
+      "从留意开始。留意器物的曲线、表面的触感，以及它与房间相处的方式。我们在意的不是填满空间，而是让空间得以呼吸。",
+      "这个展示模板将品牌叙事与系列视觉研究结合。摄影作品属于已记录来源的创作者，并非 AUREL 的真实工坊记录或在售商品。"
     ],
-    "pageTitle": "项目选集"
-  },
-  "process": {
-    "eyebrow": "03 / HOW WE WORK",
-    "title": "每一步，都有共识。",
-    "items": [
+    "values": [
       {
-        "title": "先理解，再定义",
-        "description": "聊清楚业务背景、目标与限制，共同确认真正需要解决的问题。"
+        "title": "有意义的形态",
+        "description": "清晰的轮廓可以承载一个完整的想法。我们偏爱平衡、熟悉，也留有想象空间的形态。"
       },
       {
-        "title": "一起探索与设计",
-        "description": "从结构到视觉，逐步呈现方案，让关键选择有依据、可讨论。"
+        "title": "感受材料",
+        "description": "质感与光线赋予物件性格，让一个表面值得被再次留意。"
       },
       {
-        "title": "认真落地与迭代",
-        "description": "完成实现与检查，交付清楚的使用说明，再根据反馈持续改进。"
+        "title": "为生活留白",
+        "description": "用心布置的空间不必完美，更重要的是容得下日常与个人的记忆。"
       }
     ]
-  },
-  "about": {
-    "eyebrow": "04 / A SHARED PERSPECTIVE",
-    "title": "好的合作，\n从同一张桌子开始。",
-    "description": "我们相信，专业不必复杂。坦诚地沟通、认真地倾听，把不同视角放在一起，才能做出适合业务的选择。",
-    "principles": ["问题先于答案", "表达清楚，做事扎实", "为长期使用而设计"]
   },
   "faq": {
-    "title": "开始之前，你可能想了解",
+    "title": "你可能想了解",
     "items": [
       {
-        "question": "一个项目通常从哪里开始？",
-        "answer": "从一次需求沟通开始。整理你的业务介绍、想解决的问题和已有素材，我们一起确认项目范围与下一步。"
+        "question": "可以购买这里展示的器物吗？",
+        "answer": "这是品牌展示模板，并非正在营业的商店。摄影作品用于表达视觉方向，实际品牌需另行配置商品供应与购买方式。"
       },
       {
-        "question": "可以只合作一个具体模块吗？",
-        "answer": "可以围绕品牌梳理、网站设计或前端实现等具体模块沟通。实际范围以双方确认的方案为准。"
+        "question": "这些照片是 AUREL 工坊的实拍吗？",
+        "answer": "不是。图片是来自 Unsplash 的授权参考摄影，创作者和原始链接均记录在素材清单中。"
       },
       {
-        "question": "需要提前准备哪些素材？",
-        "answer": "公司介绍、品牌标识、产品或服务资料，以及可以公开使用的图片。还没有准备齐全，也可以先把已有想法写下来。"
+        "question": "如何发起咨询？",
+        "answer": "配置真实联系邮箱后，咨询入口会打开邮件应用。模板本身不收集消息，也不存储个人信息。"
       }
     ]
   },
   "contact": {
-    "eyebrow": "LET’S MAKE IT CLEAR.",
-    "title": "下一个好想法，\n也许就从这次对话开始。",
-    "description": "告诉我们你正在思考的问题。",
-    "emailLabel": "通过邮件联系",
-    "placeholder": "联系方式待配置",
-    "note": "这是企业官网演示模板。示例品牌、项目和文案请在使用前替换。"
+    "eyebrow": "从一次对话开始",
+    "title": "有一些想法，想与我们分享？",
+    "description": "期待认真的对话，也期待新的可能。",
+    "emailLabel": "发起咨询",
+    "placeholder": "咨询入口待配置",
+    "note": "品牌展示示例。摄影素材仅作视觉参考，本站不销售商品。"
   },
   "ui": {
-    "menu": "打开导航",
-    "closeMenu": "关闭导航",
-    "viewProject": "查看示例项目",
-    "projectLabel": "示例项目",
-    "closeProject": "关闭项目详情",
-    "deliverables": "示例交付内容",
+    "menu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "viewCollection": "探索系列",
+    "collectionLabel": "视觉示例",
+    "highlights": "系列方向",
     "skip": "跳到主要内容",
     "backTop": "回到顶部",
     "navigation": "主要导航",
-    "categories": "项目分类",
+    "categories": "系列分类",
     "language": "选择语言",
     "home": "首页",
-    "allProjects": "查看全部项目",
-    "backProjects": "返回项目列表",
-    "notFound": "未找到该项目",
-    "projectIntro": "项目介绍",
-    "languageCurrent": "当前语言"
+    "allCollections": "查看全部系列",
+    "backCollections": "全部系列",
+    "notFound": "未找到该系列",
+    "collectionIntro": "系列背后的想法"
   },
   "meta": {
-    "title": "序川 · 策略与数字体验",
-    "description": "序川：以策略、设计与数字体验，梳理企业的下一步。企业官网演示模板。"
+    "title": "AUREL — 器物与日常",
+    "description": "生活方式品牌展示。从安静的形态、日常的仪式，发现慢一点的生活。"
   }
 }

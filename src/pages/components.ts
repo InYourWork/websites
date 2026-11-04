@@ -1,9 +1,11 @@
 import type { ComponentType } from "react";
 import { HomePage } from "./HomePage";
-import { ProjectsPage } from "./ProjectsPage";
-import { ProjectPage } from "./ProjectPage";
+import { CollectionsPage } from "./CollectionsPage";
+import { CollectionPage } from "./CollectionPage";
+import { StoryPage } from "./StoryPage";
 export const components: Record<string, ComponentType> = {
   HomePage,
-  ProjectsPage,
-  ProjectPage,
+  CollectionsPage,
+  CollectionPage,
+  StoryPage,
 };

@@ -1,37 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "company",
-  "category": "company",
+  "id": "brand",
+  "category": "brand",
   "name": {
-    "zh-CN": "序川 · 企业官网",
-    "en-US": "Form & Field · Company"
+    "en-US": "AUREL · Brand presentation",
+    "zh-CN": "AUREL · 品牌展示"
   },
   "description": {
-    "zh-CN": "清晰、克制的企业服务官网，包含服务、项目、合作流程与联系入口。",
-    "en-US": "A calm company website with services, projects, process and contact sections."
+    "en-US": "An editorial lifestyle brand with collections, visual stories and a brand story.",
+    "zh-CN": "编辑式生活方式品牌展示，包含系列选集、内容详情与品牌故事。"
   },
   "repository": "https://github.com/InYourWork/websites",
-  "branch": "templates/company",
+  "branch": "templates/brand",
   "stack": "react-vite",
   "contentEntry": "src/content/locales/",
   "styleEntry": "src/styles/tokens.css",
   "outputDirectory": "dist",
   "features": [
     "responsive-navigation",
-    "project-filter",
+    "collection-filter",
+    "brand-story",
     "faq",
     "email-contact",
     "multilingual",
-    "project-collection",
-    "project-detail"
+    "collection-detail"
   ],
   "requiredRuntimeCapabilities": [],
-  "designReference": "https://designmd.ai/heerentanna/clutch-clean-trust",
+  "designReference": "https://designmd.ai/chef/marblecrest",
   "localeConfig": "src/content/config.json",
   "pages": {
     "home": "/",
-    "collection": "/projects/",
-    "content": "/projects/{projectId}/"
+    "collection": "/collections/",
+    "content": "/collections/{id}/",
+    "story": "/story/"
   },
   "rendering": "static-generation"
 }

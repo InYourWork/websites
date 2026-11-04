@@ -24,7 +24,7 @@ export function routePath(
   config,
   locale,
   page = "home",
-  project = "",
+  contentId = "",
   definitions = registry,
 ) {
   validateConfig(config);
@@ -34,8 +34,8 @@ export function routePath(
   if (!definition) throw new Error(`Unknown page: ${page}`);
   let path = definition.path;
   if (path.includes("{id}")) {
-    if (!segment.test(project)) throw new Error("Invalid content slug");
-    path = path.replace("{id}", project);
+    if (!segment.test(contentId)) throw new Error("Invalid content slug");
+    path = path.replace("{id}", contentId);
   }
   if (
     path &&

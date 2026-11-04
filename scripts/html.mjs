@@ -26,7 +26,7 @@ export function renderHtml(shell, page) {
     .replace(
       /<html[^>]*>/,
       () =>
-        `<html lang="${escape(page.locale)}" data-page="${escape(page.page)}" data-project="${escape(page.id)}">`,
+        `<html lang="${escape(page.locale)}" data-page="${escape(page.page)}" data-content-id="${escape(page.id)}">`,
     )
     .replace(
       /<title>[^<]*<\/title>/,

@@ -21,7 +21,7 @@ export const locales = config.locales;
 export let locale = config.defaultLocale;
 export let site = dictionaries[locale]!;
 export let page = "home";
-export let projectId = "";
+export let contentId = "";
 export let relativeRoot = "./";
 export function configurePage(language: string, kind: string, id = "") {
   if (!dictionaries[language]) throw new Error(`Missing locale: ${language}`);
@@ -29,7 +29,7 @@ export function configurePage(language: string, kind: string, id = "") {
   locale = language;
   site = dictionaries[language]!;
   page = kind;
-  projectId = id;
+  contentId = id;
   relativeRoot = rootPrefix(path);
 }
 if (typeof document !== "undefined") {
@@ -37,10 +37,10 @@ if (typeof document !== "undefined") {
   configurePage(
     document.documentElement.lang,
     data.page ?? "home",
-    data.project ?? "",
+    data.contentId ?? "",
   );
 }
-export type { Project } from "./types";
+export type { Collection } from "./types";
 export const asset = (path: string) => `${relativeRoot}${path}`;
-export const localizedPath = (language: string, kind = page, id = projectId) =>
+export const localizedPath = (language: string, kind = page, id = contentId) =>
   `${relativeRoot}${routePath(config, language, kind, id)}`;
