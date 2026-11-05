@@ -58,8 +58,8 @@ Code uses MIT; images have separate licenses recorded in ASSET-CREDITS.json. See
 ## Languages and pages / 语言与页面
 
 
-src/content/config.json defines the default language and other language prefixes. English uses the root by default, and Chinese uses /zh/. No duplicate prefix is generated for the default language. Paths determine language, not query parameters or browser preferences.
-src/content/config.json 定义默认语言和其他语言前缀；默认英文使用根路径，中文使用 /zh/，不为默认语言生成重复前缀。语言由路径确定，不使用查询参数或浏览器偏好。
+src/content/config.json defines the default language and other language prefixes. English uses the root by default, Chinese uses /zh/, and Korean uses /ko/. No duplicate prefix is generated for the default language. Paths determine language, not query parameters or browser preferences.
+src/content/config.json 定义默认语言和其他语言前缀；默认英文使用根路径，中文使用 /zh/，韩文使用 /ko/，不为默认语言生成重复前缀。语言由路径确定，不使用查询参数或浏览器偏好。
 
 Rebuild after changing the default language. To add a language, complete its dictionary and add it to config; dictionaries are discovered automatically.
 修改默认语言后重新构建；新增语言需补齐字典并加入 config，字典文件会自动发现。
@@ -113,8 +113,8 @@ Use pnpm test:edits after changing template extension mechanisms. It creates an 
 
 ## Brand-specific editing / 品牌内容修改
 
-Edit brand identity, hero and manifesto copy, collection narratives, story paragraphs and principles in each enabled dictionary. Shared contact email remains in business.json. The story page lives at /story/ and /zh/story/; collection detail routes come from stable collection ids.
-在各启用语言字典中修改品牌标识、首屏与品牌主张、系列叙事、故事段落和理念；共享联系邮箱仍在 business.json。品牌故事页位于 /story/ 和 /zh/story/，系列详情路径来自稳定的系列 id。
+Edit brand identity, hero and manifesto copy, collection narratives, story paragraphs and principles in each enabled dictionary. Shared contact email remains in business.json. The story page lives at /story/, /zh/story/ and /ko/story/; collection detail routes come from stable collection ids.
+在各启用语言字典中修改品牌标识、首屏与品牌主张、系列叙事、故事段落和理念；共享联系邮箱仍在 business.json。品牌故事页位于 /story/、/zh/story/ 和 /ko/story/，系列详情路径来自稳定的系列 id。
 
 The template is a presentation site, not an active shop. Do not add prices, checkout, delivery promises or sales claims unless the actual business has supplied and connected those capabilities. Credit the reference photography and replace it with authorized brand assets for a real launch.
 本模板用于品牌展示，并非正在营业的商店。实际业务未提供并接入相关能力前，不添加价格、结算、配送承诺或销售声明；保留参考摄影来源，正式上线时替换为已授权的品牌素材。

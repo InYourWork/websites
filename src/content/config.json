@@ -10,6 +10,11 @@
       "code": "en-US",
       "label": "English",
       "prefix": "en"
+    },
+    {
+      "code": "ko-KR",
+      "label": "한국어",
+      "prefix": "ko"
     }
   ]
 }
