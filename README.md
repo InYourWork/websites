@@ -58,8 +58,8 @@ Code uses MIT; images have separate licenses recorded in ASSET-CREDITS.json. See
 ## Languages and pages / 语言与页面
 
 
-src/content/config.json defines the default language and other language prefixes. English uses the root by default, and Chinese uses /zh/. No duplicate prefix is generated for the default language. Paths determine language, not query parameters or browser preferences.
-src/content/config.json 定义默认语言和其他语言前缀；默认英文使用根路径，中文使用 /zh/，不为默认语言生成重复前缀。语言由路径确定，不使用查询参数或浏览器偏好。
+src/content/config.json defines the default language and other language prefixes. English uses the root by default, Chinese uses /zh/, and Korean uses /ko/. No duplicate prefix is generated for the default language. Paths determine language, not query parameters or browser preferences.
+src/content/config.json 定义默认语言和其他语言前缀；默认英文使用根路径，中文使用 /zh/，韩文使用 /ko/，不为默认语言生成重复前缀。语言由路径确定，不使用查询参数或浏览器偏好。
 
 Rebuild after changing the default language. To add a language, complete its dictionary and add it to config; dictionaries are discovered automatically.
 修改默认语言后重新构建；新增语言需补齐字典并加入 config，字典文件会自动发现。

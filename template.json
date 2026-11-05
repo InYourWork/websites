@@ -4,11 +4,13 @@
   "category": "company",
   "name": {
     "zh-CN": "序川 · 企业官网",
-    "en-US": "Form & Field · Company"
+    "en-US": "Form & Field · Company",
+    "ko-KR": "Form & Field · 기업 웹사이트"
   },
   "description": {
     "zh-CN": "清晰、克制的企业服务官网，包含服务、项目、合作流程与联系入口。",
-    "en-US": "A calm company website with services, projects, process and contact sections."
+    "en-US": "A calm company website with services, projects, process and contact sections.",
+    "ko-KR": "명확한 전략, 세심한 디자인과 디지털 경험을 소개하는 기업 웹사이트 데모."
   },
   "repository": "https://github.com/InYourWork/websites",
   "branch": "templates/company",
