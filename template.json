@@ -4,11 +4,13 @@
   "category": "product",
   "name": {
     "en-US": "SONO · Product showcase",
-    "zh-CN": "SONO · 产品展示"
+    "zh-CN": "SONO · 产品展示",
+    "ko-KR": "SONO · 제품 소개"
   },
   "description": {
     "en-US": "A colorful audio catalog with product search, detail pages and a buying guide.",
-    "zh-CN": "明亮的音频产品目录，包含产品搜索、详情页和选购指南。"
+    "zh-CN": "明亮的音频产品目录，包含产品搜索、详情页和选购指南。",
+    "ko-KR": "다채로운 오디오 제품과 상세 정보를 살펴보고 청취 가이드에서 영감을 찾아보세요."
   },
   "repository": "https://github.com/InYourWork/websites",
   "branch": "templates/product",

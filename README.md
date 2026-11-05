@@ -19,8 +19,8 @@ Versions and commands live in package.json. `dev` builds and serves the static o
 
 ## Pages and languages / 页面与语言
 
-Home, searchable catalog, product detail pages and a listening guide are registered in `src/pages/registry.json`. English is the default language at `/`; Chinese is at `/zh/`. Change the default and enabled languages in `src/content/config.json`, then rebuild.
-首页、可搜索产品目录、产品详情和聆听指南由 `src/pages/registry.json` 注册。默认英文位于 `/`，中文位于 `/zh/`。在 `src/content/config.json` 修改默认语言与启用语言后重新构建。
+Home, searchable catalog, product detail pages and a listening guide are registered in `src/pages/registry.json`. English is the default language at `/`; Chinese is at `/zh/` and Korean at `/ko/`. Change the default and enabled languages in `src/content/config.json`, then rebuild.
+首页、可搜索产品目录、产品详情和聆听指南由 `src/pages/registry.json` 注册。默认英文位于 `/`，中文位于 `/zh/`，韩文位于 `/ko/`。在 `src/content/config.json` 修改默认语言与启用语言后重新构建。
 
 ```text
 /                              Home / 首页
